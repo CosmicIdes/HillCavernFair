@@ -21,7 +21,7 @@ public class Program
         AnsiConsole.Write(
             new FigletText("HILL CAVERN FAIR")
             .Centered()
-            .Color(Color.DarkGoldenrod));
+            .Color(Color.Wheat4));
 
         Console.WriteLine();
 
@@ -33,9 +33,34 @@ public class Program
 
         Console.WriteLine();
 
-        AnsiConsole.Markup("[darkgoldenrod]Welcome to Hill Cavern Fair. This is best viewed in full screen mode.[/]");
+        AnsiConsole.Markup("[wheat4]Welcome to Hill Cavern Fair. This is best viewed in full screen mode.[/]");
 
         Console.WriteLine();
+
+        AnsiConsole.Markup("[cornflowerblue]Please enter your name:  [/]");
+
+        PlayerName = Console.ReadLine();
+
+        AnsiConsole.Markup("[cornflowerblue]Please enter your email address:  [/]");
+
+        PlayerEmail = Console.ReadLine();
+        {
+
+            if (RegexEmail.Validate(PlayerEmail))
+
+            {
+                AnsiConsole.Markup("[wheat4]Thank you. Your name is [/]" + PlayerName + "[wheat4] and your email is [/]"
+                    + PlayerEmail + "[wheat4]. Enjoy your visit.[/]");
+            }
+            else
+            {
+                AnsiConsole.Markup("[red]Please enter a valid email.  [/]");
+                PlayerEmail = Console.ReadLine();
+            }
+        }
+        Console.WriteLine();
+
+        Menu.MainMenu();
 
         Console.ReadKey();
     }
