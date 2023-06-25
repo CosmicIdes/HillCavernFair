@@ -11,7 +11,7 @@ public class HillCavernFairContext: DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlite(
-             "Server = :memory:; Database = HillCavernFairAppData; Trusted_Connection = True; ");
+             "Data Source = Story.db;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
