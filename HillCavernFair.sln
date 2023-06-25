@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1706.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HillCavernFair", "HillCavernFair\HillCavernFair.csproj", "{6DC1BFE5-7E9C-431C-BC8E-A27428CE8F74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HillCavernFair.Data", "HillCavernFairData\HillCavernFair.Data.csproj", "{F4E2BCC1-BD30-477F-9850-3D95FC9197C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HillCavernFair.Domain", "HillCavernFair.Domain\HillCavernFair.Domain.csproj", "{9E3E0D75-CEE9-467A-B3EF-B06B198710CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6DC1BFE5-7E9C-431C-BC8E-A27428CE8F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DC1BFE5-7E9C-431C-BC8E-A27428CE8F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DC1BFE5-7E9C-431C-BC8E-A27428CE8F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E2BCC1-BD30-477F-9850-3D95FC9197C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E2BCC1-BD30-477F-9850-3D95FC9197C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E2BCC1-BD30-477F-9850-3D95FC9197C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E2BCC1-BD30-477F-9850-3D95FC9197C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3E0D75-CEE9-467A-B3EF-B06B198710CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3E0D75-CEE9-467A-B3EF-B06B198710CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3E0D75-CEE9-467A-B3EF-B06B198710CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3E0D75-CEE9-467A-B3EF-B06B198710CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
