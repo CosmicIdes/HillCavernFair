@@ -1,6 +1,5 @@
-﻿//In the previous incarnation of this game,
-//the ParkMap was just in the main Game class.
-//Seperating it out makes sense in terms of SOLID- Separation of duties."
+﻿//In the previous incarnation of this game,the ParkMap was just in the main Game class.
+//Separating it out makes sense in terms of SOLID- Single Responsibility.
 
 
 namespace HillCavernFair
