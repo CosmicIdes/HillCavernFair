@@ -132,14 +132,144 @@ namespace HillCavernFair.Data
                 new Paragraph { Content="END", StoryId="PettingZooYesHasCCNo"},
 
                 //PettingZooYesNoCC
+                new Paragraph { Content="You step through the wooden gate onto the hard packed dirt. You kick up dust as you walk towards the bright white enclosure. When you touch the door to step inside, it is skin-warm, like the enclosure itself has blood pumping just beneath the fresh coats of paint.", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="Inside is filled with sweet-smelling clean hay. A single animal is curled up atop the hay, a small brown fawn with bright white spots. You’ve woken it up. It lifts its head to gaze at you and bleats a greeting—or is it a question? ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="Yes, it's a question.", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="You fall to your knees as the words of a god fill your brain.", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="HAVE YOU AN OFFERING, OR HAVE YOU DISTURBED MY SLUMBER WITHOUT REASON?", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="An offering? Do you have anything on you that you can offer the fawn? You search your pockets frantically.", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="All you have is the park map and your ticket. These aren’t going to be enough. ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="You have nothing to offer the little fawn, and so you shake your head. ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it. ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="You hear the gentle rustling of hay as the fawn approaches your prone form. ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="You hear the crunch seconds before your body allows you to feel the white hot pain, shooting up your arm and filling your entire body. ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="It’s a small blessing that you cannot see the gore of what the fawn is doing to your body, and a far larger blessing that everything goes black before it is finished. ", StoryId="PettingZooYesNoCC"},
+                new Paragraph { Content="END", StoryId="PettingZooYesNoCC"},
 
+                //PettingZooNo
+                new Paragraph { Content="You’ve made a good decision for now, though something tells you that you should return with something worthwhile.", StoryId="PettingZooNo"},
 
+                //HauntedHouseMain
+                new Paragraph { Content=@"You’re not sure how anything in this place could be more haunted than the park itself, but you head off for the “Haunted House” marked on the map.", StoryId="HauntedHouseMain"},
+                new Paragraph { Content="What you find isn’t really a house–it’s a large metal box that looks like it could be easily folded up and hauled off by a truck to a carnival in the next state–or at least it once could have been. Rust and years and the woods have seeped into its cracks, and if someone attempted to fold it up and cart it away it wouldn’t survive the first pothole it encountered on its way out of the park. ", StoryId="HauntedHouseMain"},
+                new Paragraph { Content="The metal structure is gaudily painted with faux stonework, cartoon skeletons peeking from around corners and through barred windows. The fading of years hasn’t diminished this old ride’s charm, and it’s a surprisingly welcome sight, a carnival staple planted amongst these claustrophobic hills. ", StoryId="HauntedHouseMain"},
+                new Paragraph { Content=@"And, right at the entrance, an old, old man with hair the color of yellowed receipts waves cheerfully at you. “Step right up, step right up! Have the fright of your life!” His face is so wrinkled it looks like melted wax, and on his polo shirt is a name tag that reads “Gene.” He really seems quite nice, and enthusiastic to get you on this old ride. ", StoryId="HauntedHouseMain"},
+                new Paragraph { Content="Will you ride the Haunted House?", StoryId="HauntedHouseMain"},
 
+                //HauntedHouseYes
+                new Paragraph { Content="You climb the metal steps up to the entrance of the ride. From here, you can see there is actually a cart on a track leading towards a door painted to look as though it’s wood. There’s even a safety bar on the cart, implying the ride might reach speeds for which a safety bar is required. You climb into the cart and Gene cheerfully checks the safety bar before stepping back to a control panel and starting the ride. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Mechanical whirs and clinks and roars sound as your cart is pulled forward. The metal door swings open at the last second, thrusting you into cool darkness.", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="And then the air shifts and the darkness adjusts. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="You’re outside, on a large lawn in the dead of night. The moon is high and bright, illuminating a large manor house. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Not an imitation of a manor house, not a show scene on a dark ride, you’re really there. The only thing connecting you back to your previous surroundings is the cart, but there is no track and you are completely still, facing the scene before you.", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="The manor house isn’t especially large or imposing. The great expanse of the lawn is between you and the house, and the wind plays through it in a pleasant way as your eyes adjust to the moon-bright darkness. Trees are on either side of the house, and it is well-kept with three rows of plain windows catching a bit of the moonlight and reflecting it back towards you. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="All in all, a pleasant, if confusing, place to be. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="You notice the person crawling towards the manor house with a jolt. It seemed like there was no one there just moments ago, but now you see that a figure on all fours in a black robe-like garment is right before you. You are extremely grateful that the figure is moving away from you, for there is an extreme wrongness in the way it moves, a jittering, dragging sort of crawl that reminds you of glitched analog camera footage. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="You close your eyes, perhaps willing yourself somewhere else, but you feel no change in the air. When you finally open your eyes again you are alone, but there is evidence for where your companion has gone: the first story window, to the left of the door, is open. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Oh, God, it’s gotten in. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="And you are left waiting for what feels like hours. The safety bar on the cart is indeed clapped down fast and resists all attempts at escape you can muster. You must wait, staring into the darkness of the open window, wondering what the thing is doing inside. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Your attention drifts with time, and is only snapped back after the thing has exited the house again. It no longer crawls, and it moves quite swiftly, though its movements are still jittery and clumsy. The robe reaches only its knees where it falls into tatters. Long, confident strides on thin white legs brings it towards you. A hood obscures much of its emaciated face, but you can see enough. Oh, God, you can see enough. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="And in its skinny arms, an unmoving baby. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Is it asleep?", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Is the baby asleep?", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="You can't tell.", StoryId="HauntedHouseYes"},
+                new Paragraph { Content=@"You can’t tell at all, and even if you were brave enough (surely, you are brave enough) you cannot save this child, because you’re stuck in this damn cart. You cannot run to save yourself (surely, you would never do this) because you’re stuck in this damn cart. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content=@"But you do not need to worry, for you’re not actually in danger. The– person, figure, skeleton, corpse– the thing simply passes you by, confident in its purpose. It does not even turn its head to acknowledge you. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="The baby does not move or make a sound.", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="The wind blows hard, suddenly whipping the grass around and causing you to close your eyes against the granules blasted against your face. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="Mechanical whirs and clinks and roars and your cart exits through a metal door painted to look as though it's made of wood. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="The safety bar lifts easily once the cart comes to a stop. Gene is nowhere to be seen. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="You stagger out of the cart on unsteady legs, feeling as though you just rode a modern high-speed roller coaster. ", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="From behind you, you hear someone else stand up from the cart and walk onto the metal floor. In the corner of your eye, a black and white blurred figure steps beside you.", StoryId="HauntedHouseYes"},
+                new Paragraph { Content="You turn your head, and of course you are alone. ", StoryId="HauntedHouseYes"},
 
+                //HauntedHouseNo
+                new Paragraph { Content="What a shame. It seemed like it would be fun.", StoryId="HauntedHouseNo"},
 
+                //OldMillMain
+                new Paragraph { Content="The Old Mill Ride has all the appearances of literally being in an old mill, a large wooden structure with a water wheel on the outside being pushed along by a not insignificant stream. There is an opening under the structure that lets the stream flow under and presumably through it. ", StoryId="OldMillMain"},
+                new Paragraph { Content="There is none of the expected queue area that similar rides possess, just a yawning empty doorway to darkness. The only indication that this is indeed an attraction at a theme park is a very old paint job on the side of the building.", StoryId="OldMillMain"},
+                new Paragraph { Content=@"“YE OLDE MILL” is painted in overwrought imitation medieval text across the aged wood.", StoryId="OldMillMain"},
+                new Paragraph { Content="You enter through the wide doorway. It takes a moment for your eyes to adjust to the gloom inside, despite the rest of the park not being particularly bright. ", StoryId="OldMillMain"},
+                new Paragraph { Content=@"The room is empty save for an extremely old man. He wears a faded polo shirt with a nametag that reads “Gene.” He looks tired, and greets you only with a slight wave of his hand. His sallow skin is the color of yellowed receipts. ", StoryId="OldMillMain"},
+                new Paragraph { Content=@"He is standing by the stream, which is flanked on both sides by a poured concrete floor. A small boat waits by him, its movement down the stream hampered by a bar that must be manually lifted to let it continue into the depths of the ride. ", StoryId="OldMillMain"},
+                new Paragraph { Content=@"“I miss my brother,” Gene confides to you as you approach, his voice bearing all the weight of his years. “I’m so confused now. Ray always knew what to do. I feel like I’m just going in circles.” He gestures to the boat and sighs. “Climb in.”", StoryId="OldMillMain"},
+                new Paragraph { Content="Will you ride the Old Mill?"},
+
+                //OldMillNo
+                new Paragraph { Content="You must return here eventually, but perhaps now isn’t the time.", StoryId="OldMillNo"},
+
+                //OldMillSaloon1
+                new Paragraph { Content="Gene somberly lifts the bar and your boat begins its journey down the stream. There is no safety bar on the boat, and the concrete floor is level with it. It would be very easy to stop the boat and get out at any time during this ride. ", StoryId="OldMillSaloon1"},
+                new Paragraph { Content=@"You pass through a short tunnel and are soon floating through an old west style saloon scene. A group of mannequins sit at a table playing a card game, one serving as bartender is busy pouring whiskey for a patron at the bar, and a particularly aged mannequin in a red dress stands atop a stage. A fuzzy recording of a woman singing “House of the Rising Sun” is playing over speakers you can’t see.", StoryId="OldMillSaloon1"},
+                new Paragraph { Content=@"Type “continue” to let your boat float on to the next scene, type “get out” to climb out of the boat and into the scene.", StoryId="OldMillSaloon1"},
+
+                //OldMillSaloon2
+                new Paragraph { Content="You reach out to the concrete on either side to slow the boat, and easily clamber out. The boat continues down the stream without you. ", StoryId="OldMillSaloon2"},
+                new Paragraph { Content="The recording immediately sounds clearer now that you’re level with the scene. The performer is beginning the second verse, and the quality of her voice causes you to turn and look at the stage.", StoryId="OldMillSaloon2"},
+                new Paragraph { Content=@"A young woman in a red dress is standing there singing where the mannequin used to be. “If I had only listened to what my mama said, I’d be at home today. But bein’ so young and foolish, my Lord, let a gambler lead me astray.”", StoryId="OldMillSaloon2"},
+                new Paragraph { Content=@"“Hey!” The bartender calls to you. He’s finished pouring the drink and is passing it to the man in front of him. “Find a seat or buy a drink, but quit blockin’ the door!” ", StoryId="OldMillSaloon2"},
+                new Paragraph { Content="And you are blocking the door, aren’t you? You move to the bar past the card players. ", StoryId="OldMillSaloon2"},
+                new Paragraph { Content=@"The man who just received his drink is eyeing you. “You okay there, pardner? You look like you’ve seen a ghost.”", StoryId="OldMillSaloon2"},
+                new Paragraph { Content="You suppose the best thing to do is order a drink, and you do, before turning to the man who spoke and beginning to tell him all about the strange day you’ve been having. ", StoryId="OldMillSaloon2"},
+                new Paragraph { Content="END", StoryId="OldMillSaloon2"},
+
+                //OldMillJail1
+                new Paragraph { Content="Continuing the old west theme, you find yourself looking at the inside of a jail cell. A mannequin dressed as a sheriff stands on the other side of the bars looking in at you and the single mannequin sitting on the dirt floor inside. ", StoryId="OldMillJail1"},
+                new Paragraph { Content=@"Type “continue” to let your boat float on to the next scene, type “get out” to climb out of the boat and into the scene.", StoryId="OldMillJail1"},
+
+                //OldMillJail2
+                new Paragraph { Content="You reach out to the concrete on either side to slow the boat, and easily clamber out. The boat continues down the stream without you. ", StoryId="OldMillJail2"},
+                new Paragraph { Content="You immediately feel tired as you overlook the two mannequins. You decide to join the mannequin on the floor and sit down beside it. ", StoryId="OldMillJail2"},
+                new Paragraph { Content="Your limbs feel stiff, and stretching does not relieve this feeling. Your skin catches the light as you stretch. It’s shiny. In fact, it looks just like varnished wood. You rap your knuckles against the shiny spot on your skin, and it sounds just like two pieces of varnished wood being clunked together. ", StoryId="OldMillJail2"},
+                new Paragraph { Content="You don’t have much time to worry about this development, because the exhaustion is really taking hold now. You’re so tired your limbs are wooden, both literally and figuratively. A bit of a nap here couldn’t hurt.", StoryId="OldMillJail2"},
+                new Paragraph { Content="END", StoryId="OldMillJail2"},
+
+                //OldMillGraveyard1
+                new Paragraph { Content="The next scene is a graveyard complete with a skeleton in a cowboy hat propped up against the fence. A painted cardboard moon hangs high over the scene, and a painted backdrop shows a forest in the distance.", StoryId="OldMillGraveyard1"},
+                new Paragraph { Content=@"Type “Continue” to let your boat float on to the next scene, type “Get Out” to climb out of the boat and into the scene.", StoryId="OldMillGraveyard1"},
+
+                //OldMillGraveyardDeerGodHelp
+                new Paragraph { Content="You reach out to the concrete on either side to slow the boat, and easily clamber out. The boat continues down the stream without you. ", StoryId="OldMillGraveyardDeerGodHelp"},
+                new Paragraph { Content="This scene is particularly poorly made. From the boat you could make out the corrugated sides of the gravestones, and here among the graves it’s even more obvious that they are just painted cardboard. ", StoryId="OldMillGraveyardDeerGodHelp"},
+                new Paragraph { Content=@"The forest backdrop is more intriguing, as it is painted skillfully by someone who really should be painting for somewhere other than Hill Cavern Fair. You can make out individual plants and trees, and– there is some animal in the forest, watching you. ", StoryId="OldMillGraveyardDeerGodHelp"},
+                new Paragraph { Content="You are drawn to that spot on the backdrop, heading forward to look closer. By the time you realize something is wrong, you’re already in the forest.", StoryId="OldMillGraveyardDeerGodHelp"},
+                new Paragraph { Content=@"A stag stands before you, twice your height and with twice as many legs as it should have. Its antlers are tall and many-branched, extending up into the trees where you are unable to see them end. Its eyes glow without any light source to reflect back.", StoryId="OldMillGraveyardDeerGodHelp"},
+                new Paragraph { Content="Its voice fills your mind.", StoryId="OldMillGraveyardDeerGodHelp"},
+
+                //OldMillGraveyardDeerGodHelpYes
+                new Paragraph { Content=@"The Deer God kneels before you, its many jointed legs folding down unnaturally until it reaches a level where you could easily climb upon its back.", StoryId="OldMillGraveyardDeerGodHelpYes"},
+                new Paragraph { Content="You have no choice but to climb on. You do not expect it to actually take you home, but perhaps it will take you somewhere better than here.", StoryId="OldMillGraveyardDeerGodHelpYes"},
+                new Paragraph { Content="END", StoryId="OldMillGraveyardDeerGodHelpYes"},
+
+                //OldMillGraveyardDeerGodHelpNo
+                new Paragraph { Content="I HAVE BEEN WAITING FOR YOU, SERVANT. FOLLOW ME.", StoryId="OldMillGraveyardDeerGodHelpNo"},
+                new Paragraph { Content="You have no choice but to follow the creature as it leads you deeper into the forest.", StoryId="OldMillGraveyardDeerGodHelpNo"},
+                new Paragraph { Content="END", StoryId="OldMillGraveyardDeerGodHelpNo"},
+
+                //OldMillFinal
+                new Paragraph { Content="The boat reaches a dead end. There are no more scenes, only a black wall in front of you and a door to your right.", StoryId="OldMillFinal"},
+                new Paragraph { Content="You have no choice but to climb out and go through the door. ", StoryId="OldMillFinal"},
+                new Paragraph { Content=@"The sun shines brightly as you walk out onto the gravel. You’re at the entrance to Hill Cavern Fair, and a young man in a bright yellow polo shirt grins and waves at you. On his chest is a name tag that reads “Gene.”", StoryId="OldMillFinal"},
+                new Paragraph { Content=@"“Where’ve you been, Ray? I haven’t seen anyone yet!”", StoryId="OldMillFinal"},
+                new Paragraph { Content=@"You smile and pat your brother’s shoulder. “No need to be so anxious, Gene. It’s our first day. We’ve got lots of days ahead of us. If the tourists don’t come today, there’s tomorrow, and the day after that.”", StoryId="OldMillFinal"},
+                new Paragraph { Content=@"Gene nods, always attentive to your advice. “You’re right, of course, I just really want our opening day to be grand.”", StoryId="OldMillFinal"},
+                new Paragraph { Content=@"“It can be grand with just the two of us,” you promise, leading the way into your park.", StoryId="OldMillFinal"},
+                new Paragraph { Content="END", StoryId="OldMillFinal"}
             };
+
+            foreach (var paragraphData in paragraphs)
+            {
+                context.Paragraph.Add(paragraphData);
+            }
+            context.SaveChanges();
+
+
 
 
         }
+
+
     }
 }
+

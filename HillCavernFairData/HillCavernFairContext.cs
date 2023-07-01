@@ -5,7 +5,7 @@ namespace HillCavernFair.Data;
 
 public class HillCavernFairContext: DbContext
 {
-    public DbSet<Paragraph> Paragraphs { get; set; }
+    public DbSet<Paragraph> Paragraph { get; set; }
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
