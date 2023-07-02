@@ -3,9 +3,6 @@
  * and story by Calliope Woods (https://www.calliopewoods.com).*/
 
 using Spectre.Console;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 namespace HillCavernFair;
 
@@ -19,9 +16,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-        var host = CreateHostBuilder(args).Build();
-        CreateDbIfNotExists(host);
-        host.Run();
+        
 
         Console.Title = "Hill Cavern Fair";
 
@@ -70,25 +65,6 @@ public class Program
         Menu.MainMenu();
 
         Console.ReadKey();
-    }
-
-    public static void CreateDbIfNotExists(IHost host)
-    {
-        using(var scope = host.Services.CreateScope())
-        {
-            var Services = scope.ServiceProvider;
-            try
-            {
-                var context = Services.GetRequiredService<HillCavernFairContext>();
-                StoryData.Storydb(context);
-            }
-            catch (Exception ex)
-            {
-                var logger = Services.GetRequiredService<ILogger<Program>>();
-                logger.LogError(ex, "An Error Occurred Creating in DB");
-                throw;
-            }
-        }
     }
 }
 
