@@ -16,56 +16,54 @@ public class HillCavernFairContext: DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Paragraph>()
-            .HasKey(s => new { s.Id });
-
+        //Seed data for database
         modelBuilder.Entity<Paragraph>().HasData(
            new Paragraph
            {
                Id = 1,
-               Content = "How did you get here? Your memory is fuzzy and ill-formed, and it makes you sick to your stomach every time you try to focus on it. You’re standing beside your car, in an empty gravel-covered parking lot surrounded by woods. Green encroaches on all sides, vines and grass and burrs reaching past the barriers around the parking lot and towards you and your car. ",
+               Content = @"How did you get here? Your memory is fuzzy and ill-formed, and it makes you sick to your stomach every time you try to focus on it. You’re standing beside your car, in an empty gravel-covered parking lot surrounded by woods. Green encroaches on all sides, vines and grass and burrs reaching past the barriers around the parking lot and towards you and your car. ",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 2,
-               Content = "Before you an is an archway topped by a rusted and faded metal sign bearing the words ",
+               Content = @"Before you an is an archway topped by a rusted and faded metal sign bearing the words ",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 3,
-               Content = "HILL CAVERN FAIR",
+               Content = @"HILL CAVERN FAIR",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 4,
-               Content = "The vines don’t touch this archway, rickety and ill-maintained as it is. ",
+               Content = @"The vines don’t touch this archway, rickety and ill-maintained as it is. ",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 5,
-               Content = "You have a choice to make, here. ",
+               Content = @"You have a choice to make, here. ",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 6,
-               Content = "Both choices make you feel bad, but different kinds of bad. ",
+               Content = @"Both choices make you feel bad, but different kinds of bad. ",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 7,
-               Content = "The idea of going forward into this place fills you with dread: the dread of looking over edge of a very tall cliff and considering the bottom, the dread of having to admit to your boss that you’ve made an error that you know isn’t correctable, the dread of many, many potential bad futures and a handful of good ones. ",
+               Content = @"The idea of going forward into this place fills you with dread: the dread of looking over edge of a very tall cliff and considering the bottom, the dread of having to admit to your boss that you’ve made an error that you know isn’t correctable, the dread of many, many potential bad futures and a handful of good ones. ",
                StoryId = "Intro"
            },
            new Paragraph
            {
                Id = 8,
-               Content = "On the other hand, getting in your car and driving away feels like loss. The loss of your favorite toy in a park where you will never return. The loss of your childhood neighborhood when you moved and had to make all new friends and an all new identity in an all new place– never ever quite feeling like you fit in the same way you did in your old home. An important loss, but something that will fade with time. A loss that will hit you years later in ways you can’t put into words. ",
+               Content = @"On the other hand, getting in your car and driving away feels like loss. The loss of your favorite toy in a park where you will never return. The loss of your childhood neighborhood when you moved and had to make all new friends and an all new identity in an all new place– never ever quite feeling like you fit in the same way you did in your old home. An important loss, but something that will fade with time. A loss that will hit you years later in ways you can’t put into words. ",
                StoryId = "Intro"
            },
            new Paragraph
@@ -79,13 +77,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 10,
-               Content = "You step forward under the sign and Hill Cavern Fair opens up to you amidst the woods. You first notice the darkness of the park–you’ve never seen a theme park so shaded by trees and hills. You would expect from the name that you would be on a hill, or maybe there would be a cave nearby? but you see no indication of either. ",
+               Content = @"You step forward under the sign and Hill Cavern Fair opens up to you amidst the woods. You first notice the darkness of the park–you’ve never seen a theme park so shaded by trees and hills. You would expect from the name that you would be on a hill, or maybe there would be a cave nearby? but you see no indication of either. ",
                StoryId = "ChoiceDread"
            },
            new Paragraph
            {
                Id = 11,
-               Content = "In fact, the park seems surrounded by hills, set in the lowest places among them. The path is now paved, but it was paved long ago, and is beset with potholes and weeds. A small turnstile blocks your way, and this is surely where your exploration will be stopped, because there is no way this place is open. Your car was the only one in the parking lot, and nothing here seems maintained. ",
+               Content = @"In fact, the park seems surrounded by hills, set in the lowest places among them. The path is now paved, but it was paved long ago, and is beset with potholes and weeds. A small turnstile blocks your way, and this is surely where your exploration will be stopped, because there is no way this place is open. Your car was the only one in the parking lot, and nothing here seems maintained. ",
                StoryId = "ChoiceDread"
            },
            new Paragraph
@@ -97,7 +95,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 13,
-               Content = "You jump and turn. A man stands beside you, in a faded polo shirt. He is unbelievably old, bent by the weight of years and overwhelmingly the color of yellowed receipts, from his tar-stained teeth to his liver-spotted skin. A name tag on his chest says /“Eugene./” ",
+               Content = @"You jump and turn. A man stands beside you, in a faded polo shirt. He is unbelievably old, bent by the weight of years and overwhelmingly the color of yellowed receipts, from his tar-stained teeth to his liver-spotted skin. A name tag on his chest says /“Eugene./” ",
                StoryId = "ChoiceDread"
            },
            new Paragraph
@@ -109,13 +107,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 15,
-               Content = "Is it Tuesday? You don't think so. ",
+               Content = @"Is it Tuesday? You don't think so. ",
                StoryId = "ChoiceDread"
            },
            new Paragraph
            {
                Id = 16,
-               Content = "The turnstile creaks loudly as you enter Hill Cavern Fair. ",
+               Content = @"The turnstile creaks loudly as you enter Hill Cavern Fair. ",
                StoryId = "ChoiceDread"
            },
 
@@ -123,61 +121,61 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 17,
-               Content = "You climb into your car and turn your back on the sign, driving down the gravel path that you surely followed into this place. ",
+               Content = @"You climb into your car and turn your back on the sign, driving down the gravel path that you surely followed into this place. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 18,
-               Content = "Surely you did. ",
+               Content = @"Surely you did. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 19,
-               Content = "And surely, as you drive down this winding gravel road through tightly packed trees with branches that slap your windshield and animals that you perceive only as darting, furtive movement, you will eventually reach a main road. A paved, smooth, road. ",
+               Content = @"And surely, as you drive down this winding gravel road through tightly packed trees with branches that slap your windshield and animals that you perceive only as darting, furtive movement, you will eventually reach a main road. A paved, smooth, road. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 20,
-               Content = "Surely you will. ",
+               Content = @"Surely you will. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 21,
-               Content = "Surely, right around this corner. ",
+               Content = @"Surely, right around this corner. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 22,
-               Content = "Well, maybe the next turn. ",
+               Content = @"Well, maybe the next turn. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 23,
-               Content = "Up over this hill. ",
+               Content = @"Up over this hill. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 24,
-               Content = "Eventually you’ll be home, wherever that is, or was. ",
+               Content = @"Eventually you’ll be home, wherever that is, or was. ",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 25,
-               Content = "Surely.",
+               Content = @"Surely.",
                StoryId = "ChoiceLoss"
            },
            new Paragraph
            {
                Id = 26,
-               Content = "END",
+               Content = @"END",
                StoryId = "ChoiceLoss"
            },
 
@@ -185,13 +183,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 27,
-               Content = "You head down the cracked asphalt path in the direction the map promises a snack stand. You’re unsure if a place like this is somewhere you would like to actually eat food, but curiosity leads you on to the little booth tucked into a mass of trees and vines that seem only days from swallowing the building entirely. The vines are so thick along the cracked and aged wood that you wonder how an employee could get inside the building. Flecks of paint hint that at one time this shack was brightly colored, but now exposed gray wood and rusted nails are its defining features.",
+               Content = @"You head down the cracked asphalt path in the direction the map promises a snack stand. You’re unsure if a place like this is somewhere you would like to actually eat food, but curiosity leads you on to the little booth tucked into a mass of trees and vines that seem only days from swallowing the building entirely. The vines are so thick along the cracked and aged wood that you wonder how an employee could get inside the building. Flecks of paint hint that at one time this shack was brightly colored, but now exposed gray wood and rusted nails are its defining features.",
                StoryId = "SnackStandMain"
            },
            new Paragraph
            {
                Id = 28,
-               Content = "You’re sure this place is completely closed until you catch sight of the extremely improbable man behind the counter. ",
+               Content = @"You’re sure this place is completely closed until you catch sight of the extremely improbable man behind the counter. ",
                StoryId = "SnackStandMain"
            },
            new Paragraph
@@ -203,19 +201,19 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 30,
-               Content = "SLUSHEE — 30¢",
+               Content = @"SLUSHEE — 30¢",
                StoryId = "SnackStandMain"
            },
            new Paragraph
            {
                Id = 31,
-               Content = "CARAMEL CORN — 25¢",
+               Content = @"CARAMEL CORN — 25¢",
                StoryId = "SnackStandMain"
            },
            new Paragraph
            {
                Id = 32,
-               Content = "COTTON CANDY — 15¢",
+               Content = @"COTTON CANDY — 15¢",
                StoryId = "SnackStandMain"
            },
            new Paragraph
@@ -235,13 +233,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 35,
-               Content = "The slushee machine does not, in fact, look new. It looks as old and dusty as the rest of the place, and you question if it’s ever been cleaned in the however-many-years it’s been here. The frozen drink swirling inside is red, but the rim of the drink spout looks like it has some sort of black film on it–mold, or mildew.",
+               Content = @"The slushee machine does not, in fact, look new. It looks as old and dusty as the rest of the place, and you question if it’s ever been cleaned in the however-many-years it’s been here. The frozen drink swirling inside is red, but the rim of the drink spout looks like it has some sort of black film on it–mold, or mildew.",
                StoryId = "SnackStandSlushee"
            },
            new Paragraph
            {
                Id = 36,
-               Content = "Do you want to order a slushee?",
+               Content = @"Do you want to order a slushee?",
                StoryId = "SnackStandSlushee"
            },
 
@@ -249,7 +247,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 37,
-               Content = "It really was only 30 cents, but you have a feeling if you drank more than your initial sip your medical bills would be much more expensive. It tastes exactly like wet laundry forgotten in a washing machine smells. You throw the cup away as soon as you leave the snack stand.",
+               Content = @"It really was only 30 cents, but you have a feeling if you drank more than your initial sip your medical bills would be much more expensive. It tastes exactly like wet laundry forgotten in a washing machine smells. You throw the cup away as soon as you leave the snack stand.",
                StoryId = "SnackStandSlusheeYes"
            },
 
@@ -257,7 +255,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 38,
-               Content = "A good choice, really.",
+               Content = @"A good choice, really.",
                StoryId = "SnackStandSlusheeNo"
            },
 
@@ -265,13 +263,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 39,
-               Content = "There are popcorn boxes behind the man that you assume are filled with caramel corn. They look dusty–are those spiderwebs? Even so, you feel a draw to the caramel corn. It feels like something worthwhile to have.",
+               Content = @"There are popcorn boxes behind the man that you assume are filled with caramel corn. They look dusty–are those spiderwebs? Even so, you feel a draw to the caramel corn. It feels like something worthwhile to have.",
                StoryId = "SnackStandCaramelCorn"
            },
            new Paragraph
            {
                Id = 40,
-               Content = "Do you want to order caramel corn?",
+               Content = @"Do you want to order caramel corn?",
                StoryId = "SnackStandCaramelCorn"
            },
 
@@ -279,7 +277,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 41,
-               Content = "It really only cost 25 cents. The box is dusty and cobwebby, but the caramel corn inside smells good, and when you eat some it’s satisfying, with a sweet crunch. You carry the box with you throughout the rest of the park.",
+               Content = @"It really only cost 25 cents. The box is dusty and cobwebby, but the caramel corn inside smells good, and when you eat some it’s satisfying, with a sweet crunch. You carry the box with you throughout the rest of the park.",
                StoryId = "SnackStandCaramelCornYes"
            },
 
@@ -287,13 +285,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 42,
-               Content = "Bags of cotton candy hang off the ceiling of the snack stand. They look perfectly normal, and even relatively fresh, despite there being no cotton candy machine in sight.",
+               Content = @"Bags of cotton candy hang off the ceiling of the snack stand. They look perfectly normal, and even relatively fresh, despite there being no cotton candy machine in sight.",
                StoryId = "SnackStandCottonCandy"
            },
            new Paragraph
            {
                Id = 43,
-               Content = "Do you want to order cotton candy?",
+               Content = @"Do you want to order cotton candy?",
                StoryId = "SnackStandCottonCandy"
            },
 
@@ -301,25 +299,25 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 44,
-               Content = "For 15 cents you get a pretty big bag of pink cotton candy. It tastes just like all the other cotton candy you’ve ever tasted–sweet and light.",
+               Content = @"For 15 cents you get a pretty big bag of pink cotton candy. It tastes just like all the other cotton candy you’ve ever tasted–sweet and light.",
                StoryId = "SnackStandCottonCandyYes"
            },
            new Paragraph
            {
                Id = 45,
-               Content = "As you walk away from the snack stand, picking bits of cotton candy off the cloud and letting it dissolve in your mouth, you’re struck by how crowded the place is. Maybe you just came right as they opened and beat the initial crowds– because now there are people on all sides of you. It’s really quite bustling. Mostly families, kids running by in excitement towards this or that attraction, adults laughing and calling for them to wait up– you blink as the sun hits you right in your eyes and–",
+               Content = @"As you walk away from the snack stand, picking bits of cotton candy off the cloud and letting it dissolve in your mouth, you’re struck by how crowded the place is. Maybe you just came right as they opened and beat the initial crowds– because now there are people on all sides of you. It’s really quite bustling. Mostly families, kids running by in excitement towards this or that attraction, adults laughing and calling for them to wait up– you blink as the sun hits you right in your eyes and–",
                StoryId = "SnackStandCottonCandyYes"
            },
            new Paragraph
            {
                Id = 46,
-               Content = "Silence. Empty asphalt. Shadows from the hills, and clouds overhead.",
+               Content = @"Silence. Empty asphalt. Shadows from the hills, and clouds overhead.",
                StoryId = "SnackStandCottonCandyYes"
            },
            new Paragraph
            {
                Id = 47,
-               Content = "No, you were mistaken. Hill Cavern Fair is as empty and forlorn as when you first stepped inside. In fact, you’re sure it’s only you and Gene here.",
+               Content = @"No, you were mistaken. Hill Cavern Fair is as empty and forlorn as when you first stepped inside. In fact, you’re sure it’s only you and Gene here.",
                StoryId = "SnackStandCottonCandyYes"
            },
 
@@ -327,7 +325,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 48,
-               Content = "The Grand Stage appears to be neither grand, nor a stage.",
+               Content = @"The Grand Stage appears to be neither grand, nor a stage.",
                StoryId = "GrandStageMain"
            },
            new Paragraph
@@ -339,13 +337,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 50,
-               Content = "This seems more to be a small rest area than an attraction, but sure enough there is a sign amid the weeds on the stage that seems to indicate a performance will occur here in five minutes.",
+               Content = @"This seems more to be a small rest area than an attraction, but sure enough there is a sign amid the weeds on the stage that seems to indicate a performance will occur here in five minutes.",
                StoryId = "GrandStageMain"
            },
            new Paragraph
            {
                Id = 51,
-               Content = "Will you stay for the performance?",
+               Content = @"Will you stay for the performance?",
                StoryId = "GrandStageMain"
            },
 
@@ -353,13 +351,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 52,
-               Content = "You wait for much longer than five minutes, but the wait is restorative and so you don’t leave when the time drags on. You find yourself relaxing back against the concrete, following the journeys of the cracks across it with your eyes.",
+               Content = @"You wait for much longer than five minutes, but the wait is restorative and so you don’t leave when the time drags on. You find yourself relaxing back against the concrete, following the journeys of the cracks across it with your eyes.",
                StoryId = "GrandStageYes"
            },
            new Paragraph
            {
                Id = 53,
-               Content = "You only look up when you hear a throat being cleared.",
+               Content = @"You only look up when you hear a throat being cleared.",
                StoryId = "GrandStageYes"
            },
            new Paragraph
@@ -371,7 +369,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 55,
-               Content = "He stands on the stage with all the dignity and air of a storied actor. He begins his story in a booming, authoritative voice that allows no interruption.",
+               Content = @"He stands on the stage with all the dignity and air of a storied actor. He begins his story in a booming, authoritative voice that allows no interruption.",
                StoryId = "GrandStageYes"
            },
            new Paragraph
@@ -395,13 +393,13 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 59,
-               Content = "Gene goes silent after this last declaration, staring at a spot behind you.",
+               Content = @"Gene goes silent after this last declaration, staring at a spot behind you.",
                StoryId = "GrandStageYes"
            },
            new Paragraph
            {
                Id = 60,
-               Content = "After a few minutes of silence, it seems like a good idea for you to leave.",
+               Content = @"After a few minutes of silence, it seems like a good idea for you to leave.",
                StoryId = "GrandStageYes"
            },
 
@@ -409,7 +407,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 61,
-               Content = "Nothing that happens in this place could be good. You turn away and head back to the main path.",
+               Content = @"Nothing that happens in this place could be good. You turn away and head back to the main path.",
                StoryId = "GrandStageNo"
            },
 
@@ -417,49 +415,49 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 62,
-               Content = "The petting zoo seemed like a safe choice, but as you approach it now you’re filled with the same dread you felt making the decision to come inside Hill Cavern Fair. The Petting Zoo has no attendant, and no animals in sight. A cheery hand painted sign hangs lopsided by one nail over the entrance.",
+               Content = @"The petting zoo seemed like a safe choice, but as you approach it now you’re filled with the same dread you felt making the decision to come inside Hill Cavern Fair. The Petting Zoo has no attendant, and no animals in sight. A cheery hand painted sign hangs lopsided by one nail over the entrance.",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 63,
-               Content = "HILL CAVERN PETTING ZOO",
+               Content = @"HILL CAVERN PETTING ZOO",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 64,
-               Content = "The entire area is surrounded by a wooden fence, and the surrounding forest, despite its enthusiasm for the other buildings in this park, does not encroach beyond it. The ground is dry and dusty, with none of the animal droppings found at similar petting zoos across the world.",
+               Content = @"The entire area is surrounded by a wooden fence, and the surrounding forest, despite its enthusiasm for the other buildings in this park, does not encroach beyond it. The ground is dry and dusty, with none of the animal droppings found at similar petting zoos across the world.",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 65,
-               Content = "On the far side of the animal enclosure is a small building– you assume a shelter for the animals– in surprisingly pristine condition. It looks like it has recently been painted, or maybe even recently built. It’s solid white and has a similarly hand painted sign.",
+               Content = @"On the far side of the animal enclosure is a small building– you assume a shelter for the animals– in surprisingly pristine condition. It looks like it has recently been painted, or maybe even recently built. It’s solid white and has a similarly hand painted sign.",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 66,
-               Content = "PLEASE— DON’T FEED THE ANIMALS!",
+               Content = @"PLEASE— DON’T FEED THE ANIMALS!",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 67,
-               Content = "THANK YOU, MGMT",
+               Content = @"THANK YOU, MGMT",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 68,
-               Content = "There are of course no animals in sight, only an empty enclosure with a foreboding air that twists your stomach. Something is very, very wrong here, more wrong than the cumulative wrongness of the rest of Hill Cavern Fair.",
+               Content = @"There are of course no animals in sight, only an empty enclosure with a foreboding air that twists your stomach. Something is very, very wrong here, more wrong than the cumulative wrongness of the rest of Hill Cavern Fair.",
                StoryId = "PettingZooMain"
            },
            new Paragraph
            {
                Id = 69,
-               Content = "Will you explore further?",
+               Content = @"Will you explore further?",
                StoryId = "PettingZooMain"
            },
 
@@ -467,43 +465,43 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 70,
-               Content = "You step through the wooden gate onto the hard packed dirt. You kick up dust as you walk towards the bright white enclosure. When you touch the door to step inside, it is skin-warm, like the enclosure itself has blood pumping just beneath the fresh coats of paint.",
+               Content = @"You step through the wooden gate onto the hard packed dirt. You kick up dust as you walk towards the bright white enclosure. When you touch the door to step inside, it is skin-warm, like the enclosure itself has blood pumping just beneath the fresh coats of paint.",
                StoryId = "PettingZooYesHasCC"
            },
            new Paragraph
            {
                Id = 71,
-               Content = "Inside is filled with sweet-smelling clean hay. A single animal is curled up atop the hay, a small brown fawn with bright white spots. You’ve woken it up. It lifts its head to gaze at you and bleats a greeting—or is it a question?",
+               Content = @"Inside is filled with sweet-smelling clean hay. A single animal is curled up atop the hay, a small brown fawn with bright white spots. You’ve woken it up. It lifts its head to gaze at you and bleats a greeting—or is it a question?",
                StoryId = "PettingZooYesHasCC"
            },
            new Paragraph
            {
                Id = 72,
-               Content = "Yes, it’s a question.",
+               Content = @"Yes, it’s a question.",
                StoryId = "PettingZooyesHasCC"
            },
            new Paragraph
            {
                Id = 73,
-               Content = "You fall to your knees as the words of a god fill your brain.",
+               Content = @"You fall to your knees as the words of a god fill your brain.",
                StoryId = "PettingZooYesHasCC"
            },
            new Paragraph
            {
                Id = 74,
-               Content = "HAVE YOU AN OFFERING, OR HAVE YOU DISTURBED MY SLUMBER WITHOUT REASON?",
+               Content = @"HAVE YOU AN OFFERING, OR HAVE YOU DISTURBED MY SLUMBER WITHOUT REASON?",
                StoryId = "PettingZooYesHasCC"
            },
            new Paragraph
            {
                Id = 75,
-               Content = "An offering? All you have on you is the caramel corn! Will that be enough?",
+               Content = @"An offering? All you have on you is the caramel corn! Will that be enough?",
                StoryId = "PettingZooYesHasCC"
            },
            new Paragraph
            {
                Id = 76,
-               Content = "Will you offer the Deer God your caramel corn?",
+               Content = @"Will you offer the Deer God your caramel corn?",
                StoryId = "PettingZooYesHasCC"
            },
 
@@ -511,31 +509,31 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 77,
-               Content = "With trembling hands, you pull the small, dusty box of caramel corn from your pocket and hold it out to the little fawn.",
+               Content = @"With trembling hands, you pull the small, dusty box of caramel corn from your pocket and hold it out to the little fawn.",
                StoryId = "PettingZooYesHasCCYes"
            },
            new Paragraph
            {
                Id = 78,
-               Content = "The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it.",
+               Content = @"The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it.",
                StoryId = "PettingZooYesHasCCYes"
            },
            new Paragraph
            {
                Id = 79,
-               Content = "You hear the gentle rustling of hay as the fawn approaches your prone form.",
+               Content = @"You hear the gentle rustling of hay as the fawn approaches your prone form.",
                StoryId = "PettingZooYesHasCCYes"
            },
            new Paragraph
            {
                Id = 80,
-               Content = "A soft crunch near your ear as it eats some of the spilled caramel corn. More rustling, and you realize it’s gently snuffling the inside of the box as it eats more.",
+               Content = @"A soft crunch near your ear as it eats some of the spilled caramel corn. More rustling, and you realize it’s gently snuffling the inside of the box as it eats more.",
                StoryId = "PettingZooYesHasCCYes"
            },
            new Paragraph
            {
                Id = 81,
-               Content = "You wake up outside the enclosure. In your pocket is a green rock with an image of an eight-legged stag engraved upon it, and your caramel corn is gone.",
+               Content = @"You wake up outside the enclosure. In your pocket is a green rock with an image of an eight-legged stag engraved upon it, and your caramel corn is gone.",
                StoryId = "PettingZooYesHasCCYes"
            },
 
@@ -543,43 +541,43 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 82,
-               Content = "Surely the caramel corn wouldn’t be enough. Besides, the sign said not to feed the animals!",
+               Content = @"Surely the caramel corn wouldn’t be enough. Besides, the sign said not to feed the animals!",
                StoryId = "PettingZooYesHasCCNo"
            },
            new Paragraph
            {
                Id = 83,
-               Content = "You have nothing to offer the little fawn, and so you shake your head.",
+               Content = @"You have nothing to offer the little fawn, and so you shake your head.",
                StoryId = "PettingZooYesHasCCNo"
            },
            new Paragraph
            {
                Id = 84,
-               Content = "The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it.",
+               Content = @"The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it.",
                StoryId = "PettingZooYesHasCCNo"
            },
            new Paragraph
            {
                Id = 85,
-               Content = "You hear the gentle rustling of hay as the fawn approaches your prone form.",
+               Content = @"You hear the gentle rustling of hay as the fawn approaches your prone form.",
                StoryId = "PettingZooYesHasCCNo"
            },
            new Paragraph
            {
                Id = 86,
-               Content = "You hear the crunch seconds before your body allows you to feel the white hot pain, shooting up your arm and filling your entire body.",
+               Content = @"You hear the crunch seconds before your body allows you to feel the white hot pain, shooting up your arm and filling your entire body.",
                StoryId = "PettingZooYesHasCCNo"
            },
            new Paragraph
            {
                Id = 87,
-               Content = "It’s a small blessing that you cannot see the gore of what the fawn is doing to your body, and a far larger blessing that everything goes black before it is finished.",
+               Content = @"It’s a small blessing that you cannot see the gore of what the fawn is doing to your body, and a far larger blessing that everything goes black before it is finished.",
                StoryId = "PettingZooYesHasCCNo"
            },
            new Paragraph
            {
                Id = 88,
-               Content = "END",
+               Content = @"END",
                StoryId = "PettingZooYesHasCCNo"
            },
 
@@ -587,79 +585,79 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 89,
-               Content = "You step through the wooden gate onto the hard packed dirt. You kick up dust as you walk towards the bright white enclosure. When you touch the door to step inside, it is skin-warm, like the enclosure itself has blood pumping just beneath the fresh coats of paint.",
+               Content = @"You step through the wooden gate onto the hard packed dirt. You kick up dust as you walk towards the bright white enclosure. When you touch the door to step inside, it is skin-warm, like the enclosure itself has blood pumping just beneath the fresh coats of paint.",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 90,
-               Content = "Inside is filled with sweet-smelling clean hay. A single animal is curled up atop the hay, a small brown fawn with bright white spots. You’ve woken it up. It lifts its head to gaze at you and bleats a greeting—or is it a question? ",
+               Content = @"Inside is filled with sweet-smelling clean hay. A single animal is curled up atop the hay, a small brown fawn with bright white spots. You’ve woken it up. It lifts its head to gaze at you and bleats a greeting—or is it a question? ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 91,
-               Content = "Yes, it's a question.",
+               Content = @"Yes, it's a question.",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 92,
-               Content = "You fall to your knees as the words of a god fill your brain.",
+               Content = @"You fall to your knees as the words of a god fill your brain.",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 93,
-               Content = "HAVE YOU AN OFFERING, OR HAVE YOU DISTURBED MY SLUMBER WITHOUT REASON?",
+               Content = @"HAVE YOU AN OFFERING, OR HAVE YOU DISTURBED MY SLUMBER WITHOUT REASON?",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 94,
-               Content = "An offering? Do you have anything on you that you can offer the fawn? You search your pockets frantically.",
+               Content = @"An offering? Do you have anything on you that you can offer the fawn? You search your pockets frantically.",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 95,
-               Content = "All you have is the park map and your ticket. These aren’t going to be enough. ",
+               Content = @"All you have is the park map and your ticket. These aren’t going to be enough. ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 96,
-               Content = "You have nothing to offer the little fawn, and so you shake your head. ",
+               Content = @"You have nothing to offer the little fawn, and so you shake your head. ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 97,
-               Content = "The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it. ",
+               Content = @"The fawn stands in a slow unfurling that reminds you more of a spider than any mammal you’ve seen. It has too many legs, and those legs are too long, with too many joints. It flicks its ears, and you fully collapse on the ground before it. ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 98,
-               Content = "You hear the gentle rustling of hay as the fawn approaches your prone form. ",
+               Content = @"You hear the gentle rustling of hay as the fawn approaches your prone form. ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 99,
-               Content = "You hear the crunch seconds before your body allows you to feel the white hot pain, shooting up your arm and filling your entire body. ",
+               Content = @"You hear the crunch seconds before your body allows you to feel the white hot pain, shooting up your arm and filling your entire body. ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 100,
-               Content = "It’s a small blessing that you cannot see the gore of what the fawn is doing to your body, and a far larger blessing that everything goes black before it is finished. ",
+               Content = @"It’s a small blessing that you cannot see the gore of what the fawn is doing to your body, and a far larger blessing that everything goes black before it is finished. ",
                StoryId = "PettingZooYesNoCC"
            },
            new Paragraph
            {
                Id = 101,
-               Content = "END",
+               Content = @"END",
                StoryId = "PettingZooYesNoCC"
            },
 
@@ -667,7 +665,7 @@ public class HillCavernFairContext: DbContext
            new Paragraph
            {
                Id = 102,
-               Content = "You’ve made a good decision for now, though something tells you that you should return with something worthwhile.",
+               Content = @"You’ve made a good decision for now, though something tells you that you should return with something worthwhile.",
                StoryId = "PettingZooNo"
            },
 
@@ -1044,38 +1042,142 @@ public class HillCavernFairContext: DbContext
                Content = "The next scene is a graveyard complete with a skeleton in a cowboy hat propped up against the fence. A painted cardboard moon hangs high over the scene, and a painted backdrop shows a forest in the distance.",
                StoryId = "OldMillGraveyard1"
            },
-           new Paragraph { Content = @"Type “Continue” to let your boat float on to the next scene, type “Get Out” to climb out of the boat and into the scene.", StoryId = "OldMillGraveyard1" },
+           new Paragraph
+           {
+               Id = 162,
+               Content = @"Type “Continue” to let your boat float on to the next scene, type “Get Out” to climb out of the boat and into the scene.",
+               StoryId = "OldMillGraveyard1"
+           },
 
-                //OldMillGraveyardDeerGodHelp
-                new Paragraph { Content = "You reach out to the concrete on either side to slow the boat, and easily clamber out. The boat continues down the stream without you. ", StoryId = "OldMillGraveyardDeerGodHelp" },
-                new Paragraph { Content = "This scene is particularly poorly made. From the boat you could make out the corrugated sides of the gravestones, and here among the graves it’s even more obvious that they are just painted cardboard. ", StoryId = "OldMillGraveyardDeerGodHelp" },
-                new Paragraph { Content = @"The forest backdrop is more intriguing, as it is painted skillfully by someone who really should be painting for somewhere other than Hill Cavern Fair. You can make out individual plants and trees, and– there is some animal in the forest, watching you. ", StoryId = "OldMillGraveyardDeerGodHelp" },
-                new Paragraph { Content = "You are drawn to that spot on the backdrop, heading forward to look closer. By the time you realize something is wrong, you’re already in the forest.", StoryId = "OldMillGraveyardDeerGodHelp" },
-                new Paragraph { Content = @"A stag stands before you, twice your height and with twice as many legs as it should have. Its antlers are tall and many-branched, extending up into the trees where you are unable to see them end. Its eyes glow without any light source to reflect back.", StoryId = "OldMillGraveyardDeerGodHelp" },
-                new Paragraph { Content = "Its voice fills your mind.", StoryId = "OldMillGraveyardDeerGodHelp" },
+           //OldMillGraveyardDeerGodHelp
+           new Paragraph
+           {
+               Id = 163,
+               Content = "You reach out to the concrete on either side to slow the boat, and easily clamber out. The boat continues down the stream without you. ",
+               StoryId = "OldMillGraveyardDeerGodHelp"
+           },
+           new Paragraph
+           {
+               Id = 164,
+               Content = "This scene is particularly poorly made. From the boat you could make out the corrugated sides of the gravestones, and here among the graves it’s even more obvious that they are just painted cardboard. ",
+               StoryId = "OldMillGraveyardDeerGodHelp"
+           },
+           new Paragraph
+           {
+               Id = 165,
+               Content = @"The forest backdrop is more intriguing, as it is painted skillfully by someone who really should be painting for somewhere other than Hill Cavern Fair. You can make out individual plants and trees, and– there is some animal in the forest, watching you. ",
+               StoryId = "OldMillGraveyardDeerGodHelp"
+           },
+           new Paragraph
+           {
+               Id = 166,
+               Content = "You are drawn to that spot on the backdrop, heading forward to look closer. By the time you realize something is wrong, you’re already in the forest.",
+               StoryId = "OldMillGraveyardDeerGodHelp"
+           },
+           new Paragraph
+           {
+               Id = 167,
+               Content = @"A stag stands before you, twice your height and with twice as many legs as it should have. Its antlers are tall and many-branched, extending up into the trees where you are unable to see them end. Its eyes glow without any light source to reflect back.",
+               StoryId = "OldMillGraveyardDeerGodHelp"
+           },
+           new Paragraph
+           {
+               Id = 168,
+               Content = "Its voice fills your mind.",
+               StoryId = "OldMillGraveyardDeerGodHelp"
+           },
 
-                //OldMillGraveyardDeerGodHelpYes
-                new Paragraph { Content = @"The Deer God kneels before you, its many jointed legs folding down unnaturally until it reaches a level where you could easily climb upon its back.", StoryId = "OldMillGraveyardDeerGodHelpYes" },
-                new Paragraph { Content = "You have no choice but to climb on. You do not expect it to actually take you home, but perhaps it will take you somewhere better than here.", StoryId = "OldMillGraveyardDeerGodHelpYes" },
-                new Paragraph { Content = "END", StoryId = "OldMillGraveyardDeerGodHelpYes" },
+           //OldMillGraveyardDeerGodHelpYes
+           new Paragraph
+           {
+               Id = 169,
+               Content = @"The Deer God kneels before you, its many jointed legs folding down unnaturally until it reaches a level where you could easily climb upon its back.",
+               StoryId = "OldMillGraveyardDeerGodHelpYes"
+           },
+           new Paragraph
+           {
+               Id = 170,
+               Content = "You have no choice but to climb on. You do not expect it to actually take you home, but perhaps it will take you somewhere better than here.",
+               StoryId = "OldMillGraveyardDeerGodHelpYes"
+           },
+           new Paragraph
+           {
+               Id = 171,
+               Content = "END",
+               StoryId = "OldMillGraveyardDeerGodHelpYes"
+           },
 
-                //OldMillGraveyardDeerGodHelpNo
-                new Paragraph { Content = "I HAVE BEEN WAITING FOR YOU, SERVANT. FOLLOW ME.", StoryId = "OldMillGraveyardDeerGodHelpNo" },
-                new Paragraph { Content = "You have no choice but to follow the creature as it leads you deeper into the forest.", StoryId = "OldMillGraveyardDeerGodHelpNo" },
-                new Paragraph { Content = "END", StoryId = "OldMillGraveyardDeerGodHelpNo" },
+           //OldMillGraveyardDeerGodHelpNo
+           new Paragraph
+           {
+               Id = 172,
+               Content = "I HAVE BEEN WAITING FOR YOU, SERVANT. FOLLOW ME.",
+               StoryId = "OldMillGraveyardDeerGodHelpNo"
+           },
+           new Paragraph
+           {
+               Id = 173,
+               Content = "You have no choice but to follow the creature as it leads you deeper into the forest.",
+               StoryId = "OldMillGraveyardDeerGodHelpNo"
+           },
+           new Paragraph
+           {
+               Id = 174,
+               Content = "END",
+               StoryId = "OldMillGraveyardDeerGodHelpNo"
+           },
 
-                //OldMillFinal
-                new Paragraph { Content = "The boat reaches a dead end. There are no more scenes, only a black wall in front of you and a door to your right.", StoryId = "OldMillFinal" },
-                new Paragraph { Content = "You have no choice but to climb out and go through the door. ", StoryId = "OldMillFinal" },
-                new Paragraph { Content = @"The sun shines brightly as you walk out onto the gravel. You’re at the entrance to Hill Cavern Fair, and a young man in a bright yellow polo shirt grins and waves at you. On his chest is a name tag that reads “Gene.”", StoryId = "OldMillFinal" },
-                new Paragraph { Content = @"“Where’ve you been, Ray? I haven’t seen anyone yet!”", StoryId = "OldMillFinal" },
-                new Paragraph { Content = @"You smile and pat your brother’s shoulder. “No need to be so anxious, Gene. It’s our first day. We’ve got lots of days ahead of us. If the tourists don’t come today, there’s tomorrow, and the day after that.”", StoryId = "OldMillFinal" },
-                new Paragraph { Content = @"Gene nods, always attentive to your advice. “You’re right, of course, I just really want our opening day to be grand.”", StoryId = "OldMillFinal" },
-                new Paragraph { Content = @"“It can be grand with just the two of us,” you promise, leading the way into your park.", StoryId = "OldMillFinal" },
-                new Paragraph { Content = "END", StoryId = "OldMillFinal" }
+           //OldMillFinal
+           new Paragraph
+           {
+               Id = 175,
+               Content = "The boat reaches a dead end. There are no more scenes, only a black wall in front of you and a door to your right.",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id = 176,
+               Content = "You have no choice but to climb out and go through the door. ",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id = 177,
+               Content = @"The sun shines brightly as you walk out onto the gravel. You’re at the entrance to Hill Cavern Fair, and a young man in a bright yellow polo shirt grins and waves at you. On his chest is a name tag that reads “Gene.”",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id = 178,
+               Content = @"“Where’ve you been, Ray? I haven’t seen anyone yet!”",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id = 179,
+               Content = @"You smile and pat your brother’s shoulder. “No need to be so anxious, Gene. It’s our first day. We’ve got lots of days ahead of us. If the tourists don’t come today, there’s tomorrow, and the day after that.”",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id = 180,
+               Content = @"Gene nods, always attentive to your advice. “You’re right, of course, I just really want our opening day to be grand.”",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id = 181,
+               Content = @"“It can be grand with just the two of us,” you promise, leading the way into your park.",
+               StoryId = "OldMillFinal"
+           },
+           new Paragraph
+           {
+               Id =182,
+               Content = "END",
+               StoryId = "OldMillFinal"
+           }
+        );
 
-
-           );
     }
 }
 
