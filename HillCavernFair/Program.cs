@@ -23,7 +23,7 @@ public class Program
         //var connectionstring = builder.Configuration.
         //builder.Services.AddDbContext<HillCavernFairContext>(options => options.usesqlite());
 
-        CreateConnection();
+        Connection.CreateConnection();
 
         Console.Title = "Hill Cavern Fair";
 
@@ -71,24 +71,8 @@ public class Program
 
         Menu.MainMenu();
         Console.ReadKey();
+        
     }
 
-    static SqliteConnection CreateConnection()
-    {
-
-        SqliteConnection sqlite_conn;
-        // Create a new database connection:
-        sqlite_conn = new SqliteConnection("Data Source=Story.db;");
-        // Open the connection:
-        try
-        {
-            sqlite_conn.Open();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("SQLite Connection didn't work! Please restart the app!");
-        }
-        return sqlite_conn;
-    }
 }
 

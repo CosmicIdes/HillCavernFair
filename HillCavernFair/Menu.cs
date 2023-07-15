@@ -43,7 +43,7 @@ namespace HillCavernFair
 
                     case 5:
                         Console.Clear();
-                        //Game.GameStart();
+                        Intro.GameIntro();
                         break;
 
                     default:
