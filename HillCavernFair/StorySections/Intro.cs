@@ -1,4 +1,5 @@
-﻿using HillCavernFair.Data;	
+﻿using HillCavernFair.Data;
+using HillCavernFair;
 using Microsoft.EntityFrameworkCore;
 using Spectre.Console;
 
@@ -23,7 +24,30 @@ public class Intro
 			Console.WriteLine("\t" + content.Content);
 		}
 
-		Map.ParkMap();
+		string opt;
+
+		do
+		{
+			opt = Console.ReadLine();
+
+			switch (opt)
+			{
+				case "dread":
+					ChoiceDread.IntroChoiceDread();
+					break;
+
+				case "loss":
+
+					break;
+
+				case null:
+					AnsiConsole.Markup("[red]Choose 'dread' to continue into Hill Cavern Fair or 'loss' to leave.[/]");
+					break;
+
+			}
+
+		}
+		while (true);
 	}
 }
 
