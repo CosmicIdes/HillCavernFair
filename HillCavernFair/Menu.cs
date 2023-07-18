@@ -1,4 +1,5 @@
-﻿using Spectre.Console;
+﻿using HillCavernFair.StorySections;
+using Spectre.Console;
 
 namespace HillCavernFair
 {

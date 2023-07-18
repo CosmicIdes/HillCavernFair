@@ -1,6 +1,8 @@
-﻿//In the previous incarnation of this game,the Map was just in the main Game class.
-//Separating it out makes sense in terms of SOLID- Single Responsibility.
+﻿/*In the previous incarnation of this game,the Map was just in the main Game class.
+The map also contained most of the logic for the game.
+Separating it out makes sense in terms of SOLID- Single Responsibility.*/
 
+using HillCavernFair.StorySections;
 using Spectre.Console;
 
 namespace HillCavernFair
@@ -24,28 +26,28 @@ namespace HillCavernFair
 
             {
 
-                opt = Console.ReadLine();
+                opt = ParkMapAttractions;
 
-                switch (opt.ToLower())
+                switch (opt)
                 {
-                    case "snack stand":
-                        SnackStand();
+                    case "Snack Stand":
+                        OptSnackStand.SnackStand();
                         break;
 
-                    case "the grand stage":
-                        GrandStage();
+                    case "The Grand Stage":
+                        OptGrandStage.GrandStage();
                         break;
 
-                    case "petting zoo":
-                        PettingZoo();
+                    case "Petting Zoo":
+                        OptPettingZoo.PettingZoo();
                         break;
 
-                    case "haunted house":
-                        HauntedHouse();
+                    case "Haunted House":
+                        OptHauntedHouse.HauntedHouse();
                         break;
 
-                    case "ye old mill":
-                        OldMill();
+                    case "Ye Old Mill":
+                        OptOldMill.OldMill();
                         break;
 
                     case null:
@@ -55,7 +57,6 @@ namespace HillCavernFair
                 }
 
                 } while (true);
-            
         } 
     }
 }

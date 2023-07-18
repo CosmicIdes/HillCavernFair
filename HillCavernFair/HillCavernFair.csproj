@@ -17,4 +17,16 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="StorySections\" />
+    <None Remove="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StorySections\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HillCavernFairData\HillCavernFair.Data.csproj" />
+    <ProjectReference Include="..\HillCavernFair.Domain\HillCavernFair.Domain.csproj" />
+  </ItemGroup>
 </Project>

@@ -2,10 +2,10 @@
  * Coded by Brandi Hornbuckle (https://github.com/OrenjiId3s and https://linkedin.com/in/bhornbuckle)
  * and story by Calliope Woods (https://www.calliopewoods.com).*/
 
+using HillCavernFair.Data;
+using HillCavernFair.Utilities;
+using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Data.Sqlite;
 
 namespace HillCavernFair;
 
@@ -19,11 +19,12 @@ public class Program
 
     public static void Main(string[] args)
     {
-        //var builder = Host.CreateApplicationBuilder(args);
-        //var connectionstring = builder.Configuration.
-        //builder.Services.AddDbContext<HillCavernFairContext>(options => options.usesqlite());
+        var services  = CreateServiceCollection();
 
-        Connection.CreateConnection();
+        IDbUtility? utility = services.GetService<IDbUtility>();
+
+        utility.EnsureDbExists();
+        bool run = true;
 
         Console.Title = "Hill Cavern Fair";
 
@@ -71,7 +72,15 @@ public class Program
 
         Menu.MainMenu();
         Console.ReadKey();
-        
+
+        static IServiceProvider CreateServiceCollection()
+        {
+            return new ServiceCollection()
+                .AddTransient<IDbUtility, DbUtility>()
+                .AddDbContext<HillCavernFairContext>()
+                .BuildServiceProvider();
+        }
+
     }
 
 }
