@@ -1,5 +1,4 @@
 ﻿using HillCavernFair.Data;
-using HillCavernFair;
 using Microsoft.EntityFrameworkCore;
 using Spectre.Console;
 
@@ -37,7 +36,7 @@ public class Intro
 					break;
 
 				case "loss":
-
+					ChoiceLoss.IntroChoiceLoss();
 					break;
 
 				case null:

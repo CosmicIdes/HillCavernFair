@@ -1,10 +1,10 @@
-﻿using System;
-using HillCavernFair.Data;
+﻿using HillCavernFair.Data;
 using Microsoft.EntityFrameworkCore;
+using Spectre.Console;
 
 namespace HillCavernFair.StorySections
 {
-	public class ChoiceDread
+    public class ChoiceDread
 	{
 		public static void IntroChoiceDread()
 		{
@@ -18,7 +18,7 @@ namespace HillCavernFair.StorySections
 
             foreach (var content in Paragraphs)
             {
-                Console.WriteLine("\t" + content.Content);
+                AnsiConsole.Markup("\t" + content.Content);
             }
 
             Map.ParkMap();

@@ -14,7 +14,7 @@ namespace HillCavernFair.Utilities
 
         public void EnsureDbExists()
         {
-            string path = Environment.CurrentDirectory.ToString() + "\\Story.db";
+            string path = Directory.GetParent(Environment.CurrentDirectory.ToString()) + "/../../../HillCavernFairData/Story.db";
 
             if (!File.Exists(path))
             {
@@ -98,7 +98,7 @@ namespace HillCavernFair.Utilities
                 Paragraph Paragraphs013 = new Paragraph()
                 {
                     Id = 13,
-                    Content = @"You jump and turn. A man stands beside you, in a faded polo shirt. He is unbelievably old, bent by the weight of years and overwhelmingly the color of yellowed receipts, from his tar-stained teeth to his liver-spotted skin. A name tag on his chest says /“Eugene./” ",
+                    Content = @"You jump and turn. A man stands beside you, in a faded polo shirt. He is unbelievably old, bent by the weight of years and overwhelmingly the color of yellowed receipts, from his tar-stained teeth to his liver-spotted skin. A name tag on his chest says “Eugene.” ",
                     StoryId = "ChoiceDread"
                 };
                 Paragraph Paragraphs014 = new Paragraph()
