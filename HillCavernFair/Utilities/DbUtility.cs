@@ -69,13 +69,7 @@ namespace HillCavernFair.Utilities
                     Content = @"On the other hand, getting in your car and driving away feels like loss. The loss of your favorite toy in a park where you will never return. The loss of your childhood neighborhood when you moved and had to make all new friends and an all new identity in an all new place– never ever quite feeling like you fit in the same way you did in your old home. An important loss, but something that will fade with time. A loss that will hit you years later in ways you can’t put into words. ",
                     StoryId = "Intro"
                 };
-                Paragraph Paragraphs009 = new Paragraph()
-                {
-                    Id = 9,
-                    Content = @"Type “dread” to continue into Hill Cavern Fair, type “loss” to get back into your car and try to find your way back home.",
-                    StoryId = "Intro"
-                };
-
+              
                 //ChoiceDread
                 Paragraph Paragraphs010 = new Paragraph()
                 {
@@ -239,49 +233,13 @@ namespace HillCavernFair.Utilities
                     Content = @"The slushee machine does not, in fact, look new. It looks as old and dusty as the rest of the place, and you question if it’s ever been cleaned in the however-many-years it’s been here. The frozen drink swirling inside is red, but the rim of the drink spout looks like it has some sort of black film on it–mold, or mildew.",
                     StoryId = "SnackStandSlushee"
                 };
-                Paragraph Paragraphs036 = new Paragraph()
-                {
-                    Id = 36,
-                    Content = @"Do you want to order a slushee?",
-                    StoryId = "SnackStandSlushee"
-                };
-
-                //SnackStandSlusheeYes
-                Paragraph Paragraphs037 = new Paragraph()
-                {
-                    Id = 37,
-                    Content = @"It really was only 30 cents, but you have a feeling if you drank more than your initial sip your medical bills would be much more expensive. It tastes exactly like wet laundry forgotten in a washing machine smells. You throw the cup away as soon as you leave the snack stand.",
-                    StoryId = "SnackStandSlusheeYes"
-                };
-
-                //SnackStandSlusheeNo
-                Paragraph Paragraphs038 = new Paragraph()
-                {
-                    Id = 38,
-                    Content = @"A good choice, really.",
-                    StoryId = "SnackStandSlusheeNo"
-                };
 
                 //SnackStandCaramelCorn
                 Paragraph Paragraphs039 = new Paragraph()
                 {
                     Id = 39,
                     Content = @"There are popcorn boxes behind the man that you assume are filled with caramel corn. They look dusty–are those spiderwebs? Even so, you feel a draw to the caramel corn. It feels like something worthwhile to have.",
-                    StoryId = "SnackStandCaramelCorn"
-                };
-                Paragraph Paragraphs040 = new Paragraph()
-                {
-                    Id = 40,
-                    Content = @"Do you want to order caramel corn?",
-                    StoryId = "SnackStandCaramelCorn"
-                };
-
-                //SnackStandCaramelCornYes
-                Paragraph Paragraphs041 = new Paragraph()
-                {
-                    Id = 41,
-                    Content = @"It really only cost 25 cents. The box is dusty and cobwebby, but the caramel corn inside smells good, and when you eat some it’s satisfying, with a sweet crunch. You carry the box with you throughout the rest of the park.",
-                    StoryId = "SnackStandCaramelCornYes"
+                    StoryId = "SnackStandCaramelCorn",
                 };
 
                 //SnackStandCottonCandy
@@ -289,12 +247,6 @@ namespace HillCavernFair.Utilities
                 {
                     Id = 42,
                     Content = @"Bags of cotton candy hang off the ceiling of the snack stand. They look perfectly normal, and even relatively fresh, despite there being no cotton candy machine in sight.",
-                    StoryId = "SnackStandCottonCandy"
-                };
-                Paragraph Paragraphs043 = new Paragraph()
-                {
-                    Id = 43,
-                    Content = @"Do you want to order cotton candy?",
                     StoryId = "SnackStandCottonCandy"
                 };
 
@@ -341,12 +293,6 @@ namespace HillCavernFair.Utilities
                 {
                     Id = 50,
                     Content = @"This seems more to be a small rest area than an attraction, but sure enough there is a sign amid the weeds on the stage that seems to indicate a performance will occur here in five minutes.",
-                    StoryId = "GrandStageMain"
-                };
-                Paragraph Paragraphs051 = new Paragraph()
-                {
-                    Id = 51,
-                    Content = @"Will you stay for the performance?",
                     StoryId = "GrandStageMain"
                 };
 
@@ -404,14 +350,6 @@ namespace HillCavernFair.Utilities
                     Id = 60,
                     Content = @"After a few minutes of silence, it seems like a good idea for you to leave.",
                     StoryId = "GrandStageYes"
-                };
-
-                //GrandStageNo
-                Paragraph Paragraphs061 = new Paragraph()
-                {
-                    Id = 61,
-                    Content = @"Nothing that happens in this place could be good. You turn away and head back to the main path.",
-                    StoryId = "GrandStageNo"
                 };
 
                 //PettingZooMain
@@ -1188,7 +1126,6 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs006);
                 _context.Add(Paragraphs007);
                 _context.Add(Paragraphs008);
-                _context.Add(Paragraphs009);
                 _context.Add(Paragraphs010);
                 _context.Add(Paragraphs011);
                 _context.Add(Paragraphs012);
@@ -1216,7 +1153,6 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs034);
                 _context.Add(Paragraphs035);
                 _context.Add(Paragraphs036);
-                _context.Add(Paragraphs037);
                 _context.Add(Paragraphs038);
                 _context.Add(Paragraphs039);
                 _context.Add(Paragraphs040);

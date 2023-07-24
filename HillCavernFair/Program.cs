@@ -17,6 +17,7 @@ public class Program
     public static string? PlayerName { get => playerName; set => playerName = value; }
     public static string? PlayerEmail { get => playerEmail; set => playerEmail = value; }
 
+
     public static void Main(string[] args)
     {
         var services  = CreateServiceCollection();

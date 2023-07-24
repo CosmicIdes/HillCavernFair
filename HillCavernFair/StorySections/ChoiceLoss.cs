@@ -19,9 +19,12 @@ namespace HillCavernFair.StorySections
             foreach (var content in Paragraphs)
             {
                 Console.WriteLine("\t" + content.Content);
+                Console.WriteLine();
             }
 
             AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+
+            Console.WriteLine();
 
             Menu.MainMenu();
 

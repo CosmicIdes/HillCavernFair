@@ -8,7 +8,12 @@ namespace HillCavernFair.StorySections;
 
 public class Intro
 {
-	public static void GameIntro()
+
+    private static List<string> inventory = new List<string>();
+
+    public static List<string> Inventory { get => inventory; set => inventory = value; }
+
+    public static void GameIntro()
 	{
 		var context = new HillCavernFairContext();
 
@@ -18,10 +23,18 @@ public class Intro
             .OrderBy(i => i.Id)
 			.ToList();
 
+
 		foreach (var content in Paragraphs)
 		{
 			Console.WriteLine("\t" + content.Content);
+
+            Console.WriteLine();
 		}
+
+		AnsiConsole.Markup(@"[wheat4]Type[/] [silver]“dread”[/] [wheat4]to continue into Hill Cavern Fair, type [/][silver]“loss”[/] [wheat4]to get back into your car and try to find your way back home.[/]");
+
+		Console.WriteLine();
+
 
 		string opt;
 
@@ -32,6 +45,8 @@ public class Intro
 			switch (opt)
 			{
 				case "dread":
+					Inventory.Add("Hill Cavern Fair Ticket");
+					Inventory.Add("Park Map");
 					ChoiceDread.IntroChoiceDread();
 					break;
 

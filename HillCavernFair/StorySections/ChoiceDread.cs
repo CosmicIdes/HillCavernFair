@@ -18,7 +18,8 @@ namespace HillCavernFair.StorySections
 
             foreach (var content in Paragraphs)
             {
-                AnsiConsole.Markup("\t" + content.Content);
+                Console.WriteLine("\t" + content.Content);
+                Console.WriteLine();
             }
 
             Map.ParkMap();
