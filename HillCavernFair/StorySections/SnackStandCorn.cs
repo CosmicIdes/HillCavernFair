@@ -30,7 +30,7 @@ namespace HillCavernFair.StorySections
 
                 AnsiConsole.Markup("[wheat4]Do you want to order caramel corn?[/]");
 
-                var SnackStandSlusheeChoice = AnsiConsole.Prompt(
+                var Choice = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
                 .AddChoices(new[] {
                     "Yes", "No",
@@ -44,7 +44,7 @@ namespace HillCavernFair.StorySections
 
                 {
 
-                    opt = SnackStandSlusheeChoice;
+                    opt = Choice;
 
                     switch (opt)
                     {

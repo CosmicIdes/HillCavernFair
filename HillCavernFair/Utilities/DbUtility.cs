@@ -439,12 +439,6 @@ namespace HillCavernFair.Utilities
                     Content = @"An offering? All you have on you is the caramel corn! Will that be enough?",
                     StoryId = "PettingZooYesHasCC"
                 };
-                Paragraph Paragraphs076 = new Paragraph()
-                {
-                    Id = 76,
-                    Content = @"Will you offer the Deer God your caramel corn?",
-                    StoryId = "PettingZooYesHasCC"
-                };
 
                 //PettingZooYesHasCCYes
                 Paragraph Paragraphs077 = new Paragraph()
@@ -635,13 +629,7 @@ namespace HillCavernFair.Utilities
                     Content = @"And, right at the entrance, an old, old man with hair the color of yellowed receipts waves cheerfully at you. “Step right up, step right up! Have the fright of your life!” His face is so wrinkled it looks like melted wax, and on his polo shirt is a name tag that reads “Gene.” He really seems quite nice, and enthusiastic to get you on this old ride. ",
                     StoryId = "HauntedHouseMain"
                 };
-                Paragraph Paragraphs107 = new Paragraph()
-                {
-                    Id = 107,
-                    Content = "Will you ride the Haunted House?",
-                    StoryId = "HauntedHouseMain"
-                };
-
+ 
                 //HauntedHouseYes
                 Paragraph Paragraphs108 = new Paragraph()
                 {
@@ -845,20 +833,6 @@ namespace HillCavernFair.Utilities
                     Content = @"“I miss my brother,” Gene confides to you as you approach, his voice bearing all the weight of his years. “I’m so confused now. Ray always knew what to do. I feel like I’m just going in circles.” He gestures to the boat and sighs. “Climb in.”",
                     StoryId = "OldMillMain"
                 };
-                Paragraph Paragraphs141 = new Paragraph()
-                {
-                    Id = 141,
-                    Content = "Will you ride the Old Mill?",
-                    StoryId = "OldMillMain"
-                };
-
-                //OldMillNo
-                Paragraph Paragraphs142 = new Paragraph()
-                {
-                    Id = 142,
-                    Content = "You must return here eventually, but perhaps now isn’t the time.",
-                    StoryId = "OldMillNo"
-                };
 
                 //OldMillSaloon1
                 Paragraph Paragraphs143 = new Paragraph()
@@ -873,12 +847,7 @@ namespace HillCavernFair.Utilities
                     Content = @"You pass through a short tunnel and are soon floating through an old west style saloon scene. A group of mannequins sit at a table playing a card game, one serving as bartender is busy pouring whiskey for a patron at the bar, and a particularly aged mannequin in a red dress stands atop a stage. A fuzzy recording of a woman singing “House of the Rising Sun” is playing over speakers you can’t see.",
                     StoryId = "OldMillSaloon1"
                 };
-                Paragraph Paragraphs145 = new Paragraph()
-                {
-                    Id = 145,
-                    Content = @"Type “continue” to let your boat float on to the next scene, type “get out” to climb out of the boat and into the scene.",
-                    StoryId = "OldMillSaloon1"
-                };
+             
 
                 //OldMillSaloon2
                 Paragraph Paragraphs146 = new Paragraph()
@@ -937,12 +906,6 @@ namespace HillCavernFair.Utilities
                     Content = "Continuing the old west theme, you find yourself looking at the inside of a jail cell. A mannequin dressed as a sheriff stands on the other side of the bars looking in at you and the single mannequin sitting on the dirt floor inside. ",
                     StoryId = "OldMillJail1"
                 };
-                Paragraph Paragraphs155 = new Paragraph()
-                {
-                    Id = 155,
-                    Content = @"Type “continue” to let your boat float on to the next scene, type “get out” to climb out of the boat and into the scene.",
-                    StoryId = "OldMillJail1"
-                };
 
                 //OldMillJail2
                 Paragraph Paragraphs156 = new Paragraph()
@@ -981,12 +944,6 @@ namespace HillCavernFair.Utilities
                 {
                     Id = 161,
                     Content = "The next scene is a graveyard complete with a skeleton in a cowboy hat propped up against the fence. A painted cardboard moon hangs high over the scene, and a painted backdrop shows a forest in the distance.",
-                    StoryId = "OldMillGraveyard1"
-                };
-                Paragraph Paragraphs162 = new Paragraph()
-                {
-                    Id = 162,
-                    Content = @"Type “Continue” to let your boat float on to the next scene, type “Get Out” to climb out of the boat and into the scene.",
                     StoryId = "OldMillGraveyard1"
                 };
 
@@ -1152,13 +1109,8 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs033);
                 _context.Add(Paragraphs034);
                 _context.Add(Paragraphs035);
-                _context.Add(Paragraphs036);
-                _context.Add(Paragraphs038);
                 _context.Add(Paragraphs039);
-                _context.Add(Paragraphs040);
-                _context.Add(Paragraphs041);
                 _context.Add(Paragraphs042);
-                _context.Add(Paragraphs043);
                 _context.Add(Paragraphs044);
                 _context.Add(Paragraphs045);
                 _context.Add(Paragraphs046);
@@ -1166,7 +1118,6 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs048);
                 _context.Add(Paragraphs049);
                 _context.Add(Paragraphs050);
-                _context.Add(Paragraphs051);
                 _context.Add(Paragraphs052);
                 _context.Add(Paragraphs053);
                 _context.Add(Paragraphs054);
@@ -1176,7 +1127,6 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs058);
                 _context.Add(Paragraphs059);
                 _context.Add(Paragraphs060);
-                _context.Add(Paragraphs061);
                 _context.Add(Paragraphs062);
                 _context.Add(Paragraphs063);
                 _context.Add(Paragraphs064);
@@ -1191,7 +1141,6 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs073);
                 _context.Add(Paragraphs074);
                 _context.Add(Paragraphs075);
-                _context.Add(Paragraphs076);
                 _context.Add(Paragraphs077);
                 _context.Add(Paragraphs078);
                 _context.Add(Paragraphs079);
@@ -1222,7 +1171,6 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs104);
                 _context.Add(Paragraphs105);
                 _context.Add(Paragraphs106);
-                _context.Add(Paragraphs107);
                 _context.Add(Paragraphs108);
                 _context.Add(Paragraphs109);
                 _context.Add(Paragraphs110);
@@ -1256,11 +1204,8 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs138);
                 _context.Add(Paragraphs139);
                 _context.Add(Paragraphs140);
-                _context.Add(Paragraphs141);
-                _context.Add(Paragraphs142);
                 _context.Add(Paragraphs143);
                 _context.Add(Paragraphs144);
-                _context.Add(Paragraphs145);
                 _context.Add(Paragraphs146);
                 _context.Add(Paragraphs147);
                 _context.Add(Paragraphs148);
@@ -1270,14 +1215,12 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs152);
                 _context.Add(Paragraphs153);
                 _context.Add(Paragraphs154);
-                _context.Add(Paragraphs155);
                 _context.Add(Paragraphs156);
                 _context.Add(Paragraphs157);
                 _context.Add(Paragraphs158);
                 _context.Add(Paragraphs159);
                 _context.Add(Paragraphs160);
                 _context.Add(Paragraphs161);
-                _context.Add(Paragraphs162);
                 _context.Add(Paragraphs163);
                 _context.Add(Paragraphs164);
                 _context.Add(Paragraphs165);

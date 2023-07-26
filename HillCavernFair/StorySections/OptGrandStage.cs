@@ -26,7 +26,7 @@ namespace HillCavernFair.StorySections
 
             AnsiConsole.Markup("[wheat4]Will you stay for the performance?[/]");
 
-            var GrandStageChoice = AnsiConsole.Prompt(
+            var Choice = AnsiConsole.Prompt(
                          new SelectionPrompt<string>()
                         .AddChoices(new[] {
                          "Yes", "No",
@@ -39,7 +39,7 @@ namespace HillCavernFair.StorySections
 
             {
 
-                opt = GrandStageChoice;
+                opt = Choice;
 
                 switch (opt)
                 {

@@ -60,7 +60,7 @@ namespace HillCavernFair.StorySections
                         break;
 
                     case "Nothing":
-
+                        Map.ParkMap();
                         break;
 
                     case null:
