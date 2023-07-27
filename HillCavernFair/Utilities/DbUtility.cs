@@ -1,11 +1,12 @@
 ﻿using HillCavernFair.Data;
 using HillCavernFair.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace HillCavernFair.Utilities
 {
     public class DbUtility : IDbUtility
     { 
-            private readonly HillCavernFairContext _context;
+        private readonly HillCavernFairContext _context;
 
         public DbUtility(HillCavernFairContext context)
         {
@@ -14,11 +15,8 @@ namespace HillCavernFair.Utilities
 
         public void EnsureDbExists()
         {
-            string path = Directory.GetParent(Environment.CurrentDirectory.ToString()) + "/../../../HillCavernFairData/Story.db";
 
-            if (!File.Exists(path))
-            {
-                _context.Database.EnsureCreated();
+                _context.Database.Migrate();
 
                 //Seed data for database
                 Paragraph Paragraphs001 = new Paragraph()
@@ -1241,9 +1239,7 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs180);
                 _context.Add(Paragraphs181);
                 _context.Add(Paragraphs182);
-
-                _context.SaveChanges();
-            }
+            
         }
     }
 }

@@ -1,9 +1,8 @@
-﻿using System;
-namespace HillCavernFair.Utilities
+﻿namespace HillCavernFair.Utilities
 {
-	public interface IDbUtility
+    public interface IDbUtility
 	{
-		void EnsureDbExists();
-	}
+        void EnsureDbExists();
+    }
 }
 
