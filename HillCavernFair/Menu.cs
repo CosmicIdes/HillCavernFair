@@ -74,6 +74,7 @@ namespace HillCavernFair
             {
                 return new ServiceCollection()
                     .AddLogging(configure => configure.AddSerilog())
+                    .AddTransient<Menu>()
                     .BuildServiceProvider();
             }
         }

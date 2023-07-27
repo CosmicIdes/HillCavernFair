@@ -26,11 +26,7 @@ _Add comments to your code explaining how you are using at least two of the SOLI
 
 ## Bonus Features:
 
-
-_Make a generic class and use it:_ I reused a lot of code in the initial version of this program, so surely I can use generics to tidy things up a bit.
-
-
-_Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program._
+_Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program._ I populate an inventory list with items you've acquired during your visit, and sometimes special things happen if you have a certain item in your inventory.
 
 
 
@@ -38,4 +34,4 @@ _Create a dictionary or list, populate it with several values, retrieve at least
 ## Extra Things:
 
 
-I will be making the console prettier using a nuget package called Spectre Console, and using the SQLite nuget package for the database.
+I will be making the console prettier using a nuget package called Spectre Console, and using the SQLite nuget package for the database. Serilog will be used for logging.
