@@ -26,6 +26,8 @@ namespace HillCavernFair.StorySections
 
             AnsiConsole.Markup("[wheat4]Will you ride the Haunted House?[/]");
 
+            Console.WriteLine();
+
             var Choice = AnsiConsole.Prompt(
                          new SelectionPrompt<string>()
                         .AddChoices(new[] {
@@ -56,6 +58,7 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine("\t" + content2.Content);
                             Console.WriteLine();
                         }
+                        Console.WriteLine();
                         Map.ParkMap();
                         break;
 

@@ -30,6 +30,8 @@ namespace HillCavernFair.StorySections
 
                 AnsiConsole.Markup("[wheat4]Do you want to order caramel corn?[/]");
 
+                Console.WriteLine();
+
                 var Choice = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
                 .AddChoices(new[] {

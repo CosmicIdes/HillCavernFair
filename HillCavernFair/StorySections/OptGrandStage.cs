@@ -26,6 +26,8 @@ namespace HillCavernFair.StorySections
 
             AnsiConsole.Markup("[wheat4]Will you stay for the performance?[/]");
 
+            Console.WriteLine();
+
             var Choice = AnsiConsole.Prompt(
                          new SelectionPrompt<string>()
                         .AddChoices(new[] {

@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿/*Runtime is also used frequently, so separating the method into its own class makes sense.*/
+
+using System.Diagnostics;
 
 namespace HillCavernFair
 {

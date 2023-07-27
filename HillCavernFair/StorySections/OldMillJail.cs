@@ -20,8 +20,9 @@ namespace HillCavernFair.StorySections
                 Console.WriteLine("\t" + content.Content);
                 Console.WriteLine();
             }
-
+            Console.WriteLine();
             AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+            Menu.MainMenu();
         }
 	}
 }

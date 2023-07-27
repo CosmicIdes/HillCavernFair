@@ -29,6 +29,9 @@ namespace HillCavernFair.StorySections
                     Console.WriteLine();
 
                     AnsiConsole.Markup("[wheat4]Do you want to order cotton candy?[/]");
+
+                    Console.WriteLine();
+
                     var SnackStandCandyChoice = AnsiConsole.Prompt(
                          new SelectionPrompt<string>()
                         .AddChoices(new[] {
@@ -61,6 +64,7 @@ namespace HillCavernFair.StorySections
                                     Console.WriteLine("\t" + content2.Content);
                                     Console.WriteLine();
                                 }
+                                Console.WriteLine();
                                 Map.ParkMap();
                                 break;
 

@@ -28,8 +28,11 @@ namespace HillCavernFair.StorySections
 
                 Console.WriteLine();
             }
+            Console.WriteLine();
 
             AnsiConsole.Markup("[wheat4]Will you explore further?[/]");
+
+            Console.WriteLine();
 
             var Choice = AnsiConsole.Prompt(
                          new SelectionPrompt<string>()
@@ -71,6 +74,8 @@ namespace HillCavernFair.StorySections
 
                             AnsiConsole.Markup("[wheat4]Will you offer the Deer God your caramel corn?[/]");
 
+                            Console.WriteLine();
+
                             var Choice2 = AnsiConsole.Prompt(
                             new SelectionPrompt<string>()
                             .AddChoices(new[] {
@@ -92,8 +97,9 @@ namespace HillCavernFair.StorySections
                                     Console.WriteLine("\t" + content2.Content);
                                     Console.WriteLine();
                                 }
-                                Inventory.Add("Gift from the Deer God");
-                                Inventory.Remove("caramel corn");
+                                Console.WriteLine();
+                                Inventory.Add("Gift Deer God");
+                                Map.ParkMap();
                             }
                             else
                             {
@@ -109,6 +115,7 @@ namespace HillCavernFair.StorySections
                                     Console.WriteLine("\t" + content4.Content);
                                     Console.WriteLine();
                                 }
+                                Console.WriteLine();
                                 AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
                                 Console.WriteLine();
                                 Menu.MainMenu();
@@ -128,6 +135,7 @@ namespace HillCavernFair.StorySections
                                 Console.WriteLine("\t" + content3.Content);
                                 Console.WriteLine();
                             }
+                            Console.WriteLine();
                             AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
                             Console.WriteLine();
                             Menu.MainMenu();

@@ -5,12 +5,15 @@
 using HillCavernFair.Data;
 using HillCavernFair.Utilities;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair;
 
 public class Program
 {
+
     private static string? playerName;
     private static string? playerEmail;
 
@@ -26,6 +29,12 @@ public class Program
 
         utility.EnsureDbExists();
         bool run = true;
+
+        Log.Logger = new LoggerConfiguration()
+        .WriteTo.File("gamelogger.log")
+        .CreateLogger();
+
+        var logger = services.GetService<ILogger<Program>>();
 
         Console.Title = "Hill Cavern Fair";
 
@@ -52,6 +61,8 @@ public class Program
 
         PlayerName = Console.ReadLine();
 
+        logger.LogInformation(PlayerName);
+
         AnsiConsole.Markup("[cornflowerblue]Please enter your email address:  [/]");
 
         PlayerEmail = Console.ReadLine();
@@ -69,19 +80,24 @@ public class Program
                 PlayerEmail = Console.ReadLine();
             }
         }
+
+        logger.LogInformation(PlayerEmail);
+
         Console.WriteLine();
 
         Menu.MainMenu();
+
         Console.ReadKey();
 
         static IServiceProvider CreateServiceCollection()
         {
             return new ServiceCollection()
+                .AddLogging(configure => configure.AddSerilog())
                 .AddTransient<IDbUtility, DbUtility>()
+                .AddTransient<Program>()
                 .AddDbContext<HillCavernFairContext>()
                 .BuildServiceProvider();
         }
-
     }
 
 }

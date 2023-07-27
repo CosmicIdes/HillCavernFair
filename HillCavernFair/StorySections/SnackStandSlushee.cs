@@ -25,8 +25,10 @@ namespace HillCavernFair.StorySections
 
                 AnsiConsole.Markup("[wheat4]Do you want to order a slushee?[/]");
 
+                Console.WriteLine();
+
                 var SnackStandSlusheeChoice = AnsiConsole.Prompt(
-            new SelectionPrompt<string>()
+                new SelectionPrompt<string>()
                 .AddChoices(new[] {
                     "Yes", "No",
                 }

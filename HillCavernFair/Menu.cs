@@ -1,13 +1,27 @@
-﻿using HillCavernFair.StorySections;
+﻿/*The menu is used frequently, so separating it into its own class reduces copying/pasting.*/
+
+using HillCavernFair.StorySections;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair
 {
-    public static class Menu
+    public class Menu
     {
+        
         public static void MainMenu()
         {
-            int opt;
+            var services = CreateServiceCollection();
+
+            Log.Logger = new LoggerConfiguration()
+            .WriteTo.File("gamelogger.log")
+            .CreateLogger();
+
+            var logger = services.GetService<ILogger<Menu>>();
+
+            string opt;
 
             do
 
@@ -23,26 +37,26 @@ namespace HillCavernFair
                 AnsiConsole.Markup("[cornflowerblue] 5)- Start Game [/]");
                 Console.WriteLine();
 
-                opt = Convert.ToInt32(Console.ReadLine());
+                opt = Console.ReadLine();
                 switch (opt)
                 {
-                    case 1:
+                    case "1":
                         Console.Write("Your name is " + Program.PlayerName + ".");
                         break;
 
-                    case 2:
+                    case "2":
                         Console.Write("Your email is " + Program.PlayerEmail + ".");
                         break;
 
-                    case 3:
+                    case "3":
                         Console.WriteLine("Your runtime is " + Runtime.CurrentRuntime / 1000 + "seconds.");
                         break;
 
-                    case 4:
+                    case "4":
                         Environment.Exit(5);
                         break;
 
-                    case 5:
+                    case "5":
                         Console.Clear();
                         Intro.GameIntro();
                         break;
@@ -52,8 +66,16 @@ namespace HillCavernFair
                         break;
                 }
 
+                logger.LogInformation(opt);
+
             } while (true);
 
+            static IServiceProvider CreateServiceCollection()
+            {
+                return new ServiceCollection()
+                    .AddLogging(configure => configure.AddSerilog())
+                    .BuildServiceProvider();
+            }
         }
     }
 }

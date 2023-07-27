@@ -21,7 +21,7 @@ namespace HillCavernFair.StorySections
                 Console.WriteLine();
             }
 
-            if (OptPettingZoo.Inventory.Contains("Gift from Deer God"))
+            if (OptPettingZoo.Inventory.Contains("Gift Deer God"))
             {
                 var context2 = new HillCavernFairContext();
 
@@ -31,14 +31,23 @@ namespace HillCavernFair.StorySections
                 .OrderBy(i => i.Id)
                 .ToList();
 
+                Console.WriteLine();
+
                 AnsiConsole.Markup("[green]WELCOME, [/]" + Program.PlayerName + "[green]. DO YOU WISH TO RETURN HOME?[/]");
+
+                Console.WriteLine();
+
+                Console.WriteLine();
 
                 foreach (var content2 in Paragraphs2)
                 {
                     Console.WriteLine("\t" + content2.Content);
                     Console.WriteLine();
                 }
+                Console.WriteLine();
                 AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+                Console.WriteLine();
+                Menu.MainMenu();
             }
             else
             {
@@ -54,7 +63,10 @@ namespace HillCavernFair.StorySections
                     Console.WriteLine("\t" + content3.Content);
                     Console.WriteLine();
                 }
+                Console.WriteLine();
                 AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+                Console.WriteLine();
+                Menu.MainMenu();
             } 
         }
 	}

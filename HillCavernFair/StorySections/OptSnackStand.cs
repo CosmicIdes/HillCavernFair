@@ -22,11 +22,11 @@ namespace HillCavernFair.StorySections
                 Console.WriteLine("\t" + content.Content);
 
                 Console.WriteLine();
-
-                SnackStandChoice();
             }
 
+            SnackStandChoice();
         }
+
         public static void SnackStandChoice()
         {
 

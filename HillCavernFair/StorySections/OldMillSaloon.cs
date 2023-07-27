@@ -11,6 +11,8 @@ namespace HillCavernFair.StorySections
 
             AnsiConsole.Markup(@"[wheat4]Choose “continue” to let your boat float on to the next scene, choose “get out” to climb out of the boat and into the scene.[/]");
 
+            Console.WriteLine();
+
             var Choice = AnsiConsole.Prompt(
                          new SelectionPrompt<string>()
                         .AddChoices(new[] {
@@ -41,12 +43,33 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine("\t" + content.Content);
                             Console.WriteLine();
                         }
+                        Console.WriteLine();
                         AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+                        Console.WriteLine();
+                        Menu.MainMenu();
                         break;
 
                     case "Continue":
-                        
+
+                        var context4 = new HillCavernFairContext();
+
+                        var Paragraphs4 = context4.Paragraph
+                        .AsNoTracking()
+                        .Where(s => s.StoryId == "OldMillJail1")
+                        .OrderBy(i => i.Id)
+                        .ToList();
+                        foreach (var content4 in Paragraphs4)
+                        {
+                            Console.WriteLine("\t" + content4.Content);
+                            Console.WriteLine();
+                        }
+
+                        Console.WriteLine();
+
+
                         AnsiConsole.Markup(@"[wheat4]Choose “continue” to let your boat float on to the next scene, choose “get out” to climb out of the boat and into the scene.[/]");
+
+                        Console.WriteLine();
 
                         var Choice2 = AnsiConsole.Prompt(
                                      new SelectionPrompt<string>()
@@ -80,6 +103,8 @@ namespace HillCavernFair.StorySections
                                         Console.WriteLine();
                                     }
 
+                                    Console.WriteLine();
+
                                     var Choice3 = AnsiConsole.Prompt(
                                      new SelectionPrompt<string>()
                                     .AddChoices(new[] {
@@ -94,7 +119,7 @@ namespace HillCavernFair.StorySections
                                         switch (opt3)
                                         {
                                             case "Get out":
-                                                OldMillJail.OldMillJailOpt();
+                                                OldMillGraveyard.OldMillGraveyardOptDeer();
                                                 break;
 
                                             case "Continue":
@@ -110,7 +135,10 @@ namespace HillCavernFair.StorySections
                                                     Console.WriteLine("\t" + content3.Content);
                                                     Console.WriteLine();
                                                 }
+                                                Console.WriteLine();
                                                 AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+                                                Console.WriteLine();
+                                                Menu.MainMenu();
                                                 break;
                                         }
                                     }
