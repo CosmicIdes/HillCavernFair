@@ -39,27 +39,30 @@ namespace HillCavernFair
 
                 opt = Console.ReadLine();
 
-                logger.LogInformation(opt);
-
                 switch (opt)
                 {
                     case "1":
                         Console.Write("Your name is " + Program.PlayerName + ".");
+                        logger.LogInformation("Menu option 1");
                         break;
 
                     case "2":
                         Console.Write("Your email is " + Program.PlayerEmail + ".");
+                        logger.LogInformation("Menu option 2");
                         break;
 
                     case "3":
                         Console.WriteLine("Your runtime is " + Runtime.CurrentRuntime / 1000 + "seconds.");
+                        logger.LogInformation("Menu option 3");
                         break;
 
                     case "4":
+                        logger.LogInformation("Menu option 4");
                         Environment.Exit(5);
                         break;
 
                     case "5":
+                        logger.LogInformation("Menu option 5");
                         Console.Clear();
                         Intro.GameIntro();
                         break;

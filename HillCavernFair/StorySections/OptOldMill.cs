@@ -69,12 +69,14 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine("\t" + content2.Content);
                             Console.WriteLine();
                         }
+                        logger.LogInformation("Chose to ride Ye Old Mill");
                         OldMillSaloon.OldMillSaloonOpt();
                         break;
 
                     case "No":
                         Console.WriteLine("You must return here eventually, but perhaps now isn’t the time.");
                         Console.WriteLine();
+                        logger.LogInformation("Chose not to ride Ye Old Mill");
                         Map.ParkMap();
                         break;
 
@@ -83,8 +85,6 @@ namespace HillCavernFair.StorySections
                         break;
 
                 }
-
-                logger.LogInformation(Choice + "Old Mill");
 
             } while (true);
 

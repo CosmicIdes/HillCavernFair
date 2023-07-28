@@ -3,6 +3,9 @@ The map also contained most of the logic for the game.
 Separating it out makes sense in terms of SOLID- Single Responsibility.*/
 
 using HillCavernFair.StorySections;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair
@@ -11,6 +14,13 @@ namespace HillCavernFair
 	{
 		public static void ParkMap()
 		{
+            var services = CreateServiceCollection();
+
+            Log.Logger = new LoggerConfiguration()
+            .WriteTo.File("gamelogger.txt")
+            .CreateLogger();
+
+            var logger = services.GetService<ILogger<Map>>();
 
             var ParkMapAttractions = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
@@ -31,22 +41,27 @@ namespace HillCavernFair
                 switch (opt)
                 {
                     case "Snack Stand":
+                        logger.LogInformation("Chose Snack Stand");
                         OptSnackStand.SnackStand();
                         break;
 
                     case "The Grand Stage":
+                        logger.LogInformation("Chose the Grand Stage");
                         OptGrandStage.GrandStage();
                         break;
 
                     case "Petting Zoo":
+                        logger.LogInformation("Chose the Petting Zoo");
                         OptPettingZoo.PettingZoo();
                         break;
 
                     case "Haunted House":
+                        logger.LogInformation("Chose the Haunted House");
                         OptHauntedHouse.HauntedHouse();
                         break;
 
                     case "Ye Old Mill":
+                        logger.LogInformation("Chose Ye Old Mill");
                         OptOldMill.OldMill();
                         break;
 
@@ -57,6 +72,14 @@ namespace HillCavernFair
                 }
 
                 } while (true);
+
+            static IServiceProvider CreateServiceCollection()
+            {
+                return new ServiceCollection()
+                    .AddLogging(configure => configure.AddSerilog())
+                    .AddTransient<Map>()
+                    .BuildServiceProvider();
+            }
         } 
     }
 }

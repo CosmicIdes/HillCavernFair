@@ -58,12 +58,14 @@ namespace HillCavernFair.StorySections
                         case "Yes":
                             Console.WriteLine("It really was only 30 cents, but you have a feeling if you drank more than your initial sip your medical bills would be much more expensive. It tastes exactly like wet laundry forgotten in a washing machine smells. You throw the cup away as soon as you leave the snack stand.");
                             Console.WriteLine();
+                            logger.LogInformation("Chose to get a slushee");
                             Map.ParkMap();
                             break;
 
                         case "No":
                             Console.WriteLine("A good choice, really.");
                             Console.WriteLine();
+                            logger.LogInformation("Chose not to get a slushee");
                             Map.ParkMap();
                             break;
 
@@ -72,8 +74,6 @@ namespace HillCavernFair.StorySections
                             break;
 
                     }
-
-                    logger.LogInformation(opt);
 
                 } while (true);
 

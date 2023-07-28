@@ -68,12 +68,14 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine("\t" + content2.Content);
                             Console.WriteLine();
                         }
+                        logger.LogInformation("Chose to watch Grand Stage performance");
                         Map.ParkMap();
                         break;
 
                     case "No":
                         Console.WriteLine("Nothing that happens in this place could be good. You turn away and head back to the main path.");
                         Console.WriteLine();
+                        logger.LogInformation("Chose not to watch Grand Stage performance");
                         Map.ParkMap();
                         break;
 
@@ -82,8 +84,6 @@ namespace HillCavernFair.StorySections
                         break;
 
                 }
-
-                logger.LogInformation(opt);
 
             } while (true);
 

@@ -58,21 +58,22 @@ public class Intro
 				case "dread":
 					Inventory.Add("Hill Cavern Fair Ticket");
 					Inventory.Add("Park Map");
-					logger.LogInformation("Hill Cavern Fair ticket and Park Map added to inventory.");
+                    logger.LogInformation("Chose dread");
+                    logger.LogInformation("Hill Cavern Fair ticket and Park Map added to inventory.");
 					ChoiceDread.IntroChoiceDread();
 					break;
 
 				case "loss":
-					ChoiceLoss.IntroChoiceLoss();
+                    logger.LogInformation("Chose loss");
+                    ChoiceLoss.IntroChoiceLoss();
 					break;
 
 				case null:
-					AnsiConsole.Markup("[red]Choose 'dread' to continue into Hill Cavern Fair or 'loss' to leave.[/]");
+                    AnsiConsole.Markup("[red]Choose 'dread' to continue into Hill Cavern Fair or 'loss' to leave.[/]");
 					break;
 
 			}
 
-			logger.LogInformation(opt);
 		}
 		while (true);
 	}

@@ -57,6 +57,7 @@ namespace HillCavernFair.StorySections
                         Console.WriteLine();
                         AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
                         Console.WriteLine();
+                        logger.LogInformation("Chose get out at Saloon");
                         Menu.MainMenu();
                         break;
 
@@ -75,7 +76,7 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine();
                         }
 
-                        logger.LogInformation(Choice + "Saloon");
+                        logger.LogInformation("Chose to continue past Saloon");
 
                         Console.WriteLine();
 
@@ -99,6 +100,7 @@ namespace HillCavernFair.StorySections
                             switch (opt2)
                             {
                                 case "Get out":
+                                    logger.LogInformation("Chose to get out at Jail");
                                     OldMillJail.OldMillJailOpt();
                                     break;
 
@@ -116,7 +118,7 @@ namespace HillCavernFair.StorySections
                                         Console.WriteLine();
                                     }
 
-                                    logger.LogInformation(Choice2 + "Jail");
+                                    logger.LogInformation("Chose to continue past Jail");
 
                                     Console.WriteLine();
 
@@ -134,6 +136,7 @@ namespace HillCavernFair.StorySections
                                         switch (opt3)
                                         {
                                             case "Get out":
+                                                logger.LogInformation("Chose to get out at Graveyard");
                                                 OldMillGraveyard.OldMillGraveyardOptDeer();
                                                 break;
 
@@ -150,6 +153,7 @@ namespace HillCavernFair.StorySections
                                                     Console.WriteLine("\t" + content3.Content);
                                                     Console.WriteLine();
                                                 }
+                                                logger.LogInformation("Chose to go past Graveyard");
                                                 Console.WriteLine();
                                                 AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
                                                 Console.WriteLine();
@@ -157,7 +161,6 @@ namespace HillCavernFair.StorySections
                                                 break;
                                         }
 
-                                        logger.LogInformation(Choice3 + "Graveyard");
                                     }
                                     while (true);
                             }

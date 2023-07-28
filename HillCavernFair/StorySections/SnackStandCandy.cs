@@ -80,6 +80,7 @@ namespace HillCavernFair.StorySections
 
                             case "No":
                                 Console.WriteLine();
+                                logger.LogInformation("Chose not to get cotton candy");
                                 Map.ParkMap();
                                 break;
 
@@ -88,8 +89,6 @@ namespace HillCavernFair.StorySections
                                 break;
 
                         }
-
-                        logger.LogInformation(opt);
 
                     } while (true);
 

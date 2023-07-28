@@ -83,6 +83,8 @@ namespace HillCavernFair.StorySections
                                 Console.WriteLine();
                             }
 
+                            logger.LogInformation("Chose to go into the Petting Zoo with caramel corn");
+
                             AnsiConsole.Markup("[wheat4]Will you offer the Deer God your caramel corn?[/]");
 
                             Console.WriteLine();
@@ -110,6 +112,7 @@ namespace HillCavernFair.StorySections
                                 }
                                 Console.WriteLine();
                                 Inventory.Add("Gift Deer God");
+                                logger.LogInformation("Chose to give Deer God your caramel corn");
                                 logger.LogInformation("Gift from the Deer God was added to inventory.");
                                 Map.ParkMap();
                             }
@@ -129,10 +132,11 @@ namespace HillCavernFair.StorySections
                                 }
                                 Console.WriteLine();
                                 AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
+                                logger.LogInformation("Chose not to give the Deer God your caramel corn. Maybe you should next time");
                                 Console.WriteLine();
                                 Menu.MainMenu();
                             }
-                            logger.LogInformation(Choice2);
+
                         }
                         else
                         {
@@ -151,6 +155,7 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine();
                             AnsiConsole.Markup("Your runtime was " + Runtime.CurrentRuntime / 1000 + " seconds.");
                             Console.WriteLine();
+                            logger.LogInformation("You died. Maybe revisit the Deer God with something worthwhile");
                             Menu.MainMenu();
                         }
                         break;
@@ -158,6 +163,7 @@ namespace HillCavernFair.StorySections
                     case "No":
                         Console.WriteLine(@"You’ve made a good decision for now, though something tells you that you should return with something worthwhile.");
                         Console.WriteLine();
+                        logger.LogInformation("Chose not to go into the Petting Zoo");
                         Map.ParkMap();
                         break;
 
@@ -166,7 +172,6 @@ namespace HillCavernFair.StorySections
                         break;
 
                 }
-                logger.LogInformation(opt);
 
             } while (true);
 

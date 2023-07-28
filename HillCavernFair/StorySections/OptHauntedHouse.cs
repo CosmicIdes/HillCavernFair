@@ -70,12 +70,14 @@ namespace HillCavernFair.StorySections
                             Console.WriteLine();
                         }
                         Console.WriteLine();
+                        logger.LogInformation("Chose to ride the Haunted House");
                         Map.ParkMap();
                         break;
 
                     case "No":
                         Console.WriteLine("What a shame. It seemed like it would be fun.");
                         Console.WriteLine();
+                        logger.LogInformation("Chose not to ride Haunted House");
                         Map.ParkMap();
                         break;
 
@@ -84,8 +86,6 @@ namespace HillCavernFair.StorySections
                         break;
 
                 }
-
-                logger.LogInformation(Choice + "Haunted House");
 
             } while (true);
 

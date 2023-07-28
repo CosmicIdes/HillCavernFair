@@ -70,6 +70,7 @@ namespace HillCavernFair.StorySections
 
                         case "No":
                             Console.WriteLine();
+                            logger.LogInformation("Chose not to get caramel corn");
                             Map.ParkMap();
                             break;
 

@@ -59,18 +59,22 @@ namespace HillCavernFair.StorySections
                 switch (opt)
                 {
                     case "SLUSHEE":
+                        logger.LogInformation("Chose to view slushee");
                         SnackStandSlushee.Slushee();
                         break;
 
                     case "CARAMEL CORN":
+                        logger.LogInformation("Chose to view caramel corn");
                         SnackStandCorn.Corn();
                         break;
 
                     case "COTTON CANDY":
+                        logger.LogInformation("Chose to view cotton candy");
                         SnackStandCandy.Candy();
                         break;
 
                     case "Nothing":
+                        logger.LogInformation("Chose nothing from the Snack Stand");
                         Map.ParkMap();
                         break;
 
@@ -78,8 +82,6 @@ namespace HillCavernFair.StorySections
                         SnackStandChoice();
                         break;
                 }
-
-                logger.LogInformation(opt);
 
             } while (true);
 
