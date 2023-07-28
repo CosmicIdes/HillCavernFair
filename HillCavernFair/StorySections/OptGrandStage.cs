@@ -1,5 +1,8 @@
 ﻿using HillCavernFair.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair.StorySections
@@ -40,6 +43,13 @@ namespace HillCavernFair.StorySections
             do
 
             {
+                var services = CreateServiceCollection();
+
+                Log.Logger = new LoggerConfiguration()
+                .WriteTo.File("gamelogger.log")
+                .CreateLogger();
+
+                var logger = services.GetService<ILogger<OptGrandStage>>();
 
                 opt = Choice;
 
@@ -73,7 +83,17 @@ namespace HillCavernFair.StorySections
 
                 }
 
+                logger.LogInformation(opt);
+
             } while (true);
+
+            static IServiceProvider CreateServiceCollection()
+            {
+                return new ServiceCollection()
+                    .AddLogging(configure => configure.AddSerilog())
+                    .AddTransient<OptGrandStage>()
+                    .BuildServiceProvider();
+            }
         }
 	}
 }

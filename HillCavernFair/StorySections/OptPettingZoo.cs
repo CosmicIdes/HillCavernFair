@@ -1,5 +1,8 @@
 ﻿using HillCavernFair.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair.StorySections
@@ -40,6 +43,14 @@ namespace HillCavernFair.StorySections
                          "Yes", "No",
                          }
                     ));
+
+            var services = CreateServiceCollection();
+
+            Log.Logger = new LoggerConfiguration()
+            .WriteTo.File("gamelogger.log")
+            .CreateLogger();
+
+            var logger = services.GetService<ILogger<OptPettingZoo>>();
 
             string opt;
 
@@ -99,6 +110,7 @@ namespace HillCavernFair.StorySections
                                 }
                                 Console.WriteLine();
                                 Inventory.Add("Gift Deer God");
+                                logger.LogInformation("Gift from the Deer God was added to inventory.");
                                 Map.ParkMap();
                             }
                             else
@@ -120,6 +132,7 @@ namespace HillCavernFair.StorySections
                                 Console.WriteLine();
                                 Menu.MainMenu();
                             }
+                            logger.LogInformation(Choice2);
                         }
                         else
                         {
@@ -153,8 +166,17 @@ namespace HillCavernFair.StorySections
                         break;
 
                 }
+                logger.LogInformation(opt);
 
             } while (true);
+
+            static IServiceProvider CreateServiceCollection()
+            {
+                return new ServiceCollection()
+                    .AddLogging(configure => configure.AddSerilog())
+                    .AddTransient<OptPettingZoo>()
+                    .BuildServiceProvider();
+            }
         }
 	}
 }

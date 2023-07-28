@@ -1,5 +1,8 @@
 ﻿using HillCavernFair.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair.StorySections
@@ -44,6 +47,13 @@ namespace HillCavernFair.StorySections
                     do
 
                     {
+                        var services = CreateServiceCollection();
+
+                        Log.Logger = new LoggerConfiguration()
+                        .WriteTo.File("gamelogger.log")
+                        .CreateLogger();
+
+                        var logger = services.GetService<ILogger<SnackStandCandy>>();
 
                         opt = SnackStandCandyChoice;
 
@@ -51,7 +61,7 @@ namespace HillCavernFair.StorySections
                         {
                             case "Yes":
                                 Inventory.Add("cotton candy");
-
+                                logger.LogInformation("Cotton candy added to inventory.");
                                 var context2 = new HillCavernFairContext();
 
                                 var Paragraphs2 = context2.Paragraph
@@ -79,8 +89,17 @@ namespace HillCavernFair.StorySections
 
                         }
 
+                        logger.LogInformation(opt);
+
                     } while (true);
-                
+
+                static IServiceProvider CreateServiceCollection()
+                {
+                    return new ServiceCollection()
+                        .AddLogging(configure => configure.AddSerilog())
+                        .AddTransient<SnackStandCandy>()
+                        .BuildServiceProvider();
+                }
             }
         }
 	}

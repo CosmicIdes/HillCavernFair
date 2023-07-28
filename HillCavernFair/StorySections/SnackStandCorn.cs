@@ -1,5 +1,8 @@
 ﻿using HillCavernFair.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using Spectre.Console;
 
 namespace HillCavernFair.StorySections
@@ -33,12 +36,19 @@ namespace HillCavernFair.StorySections
                 Console.WriteLine();
 
                 var Choice = AnsiConsole.Prompt(
-            new SelectionPrompt<string>()
+                new SelectionPrompt<string>()
                 .AddChoices(new[] {
                     "Yes", "No",
                 }
                 ));
 
+                var services = CreateServiceCollection();
+
+                Log.Logger = new LoggerConfiguration()
+                .WriteTo.File("gamelogger.log")
+                .CreateLogger();
+
+                var logger = services.GetService<ILogger<SnackStandCorn>>();
 
                 string opt;
 
@@ -52,6 +62,7 @@ namespace HillCavernFair.StorySections
                     {
                         case "Yes":
                             Inventory.Add("caramel corn");
+                            logger.LogInformation("Caramel corn added to inventory.");
                             Console.WriteLine(@"It really only cost 25 cents. The box is dusty and cobwebby, but the caramel corn inside smells good, and when you eat some it’s satisfying, with a sweet crunch. You carry the box with you throughout the rest of the park.");
                             Console.WriteLine();
                             Map.ParkMap();
@@ -70,6 +81,13 @@ namespace HillCavernFair.StorySections
 
                 } while (true);
 
+                static IServiceProvider CreateServiceCollection()
+                {
+                    return new ServiceCollection()
+                        .AddLogging(configure => configure.AddSerilog())
+                        .AddTransient<SnackStandCorn>()
+                        .BuildServiceProvider();
+                }
             }
         }
     }

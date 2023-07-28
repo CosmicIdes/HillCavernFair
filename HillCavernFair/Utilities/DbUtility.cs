@@ -15,7 +15,8 @@ namespace HillCavernFair.Utilities
 
         public void EnsureDbExists()
         {
-
+            if (!File.Exists("Story.db"))
+            {
                 _context.Database.Migrate();
 
                 //Seed data for database
@@ -67,7 +68,7 @@ namespace HillCavernFair.Utilities
                     Content = @"On the other hand, getting in your car and driving away feels like loss. The loss of your favorite toy in a park where you will never return. The loss of your childhood neighborhood when you moved and had to make all new friends and an all new identity in an all new place– never ever quite feeling like you fit in the same way you did in your old home. An important loss, but something that will fade with time. A loss that will hit you years later in ways you can’t put into words. ",
                     StoryId = "Intro"
                 };
-              
+
                 //ChoiceDread
                 Paragraph Paragraphs010 = new Paragraph()
                 {
@@ -627,7 +628,7 @@ namespace HillCavernFair.Utilities
                     Content = @"And, right at the entrance, an old, old man with hair the color of yellowed receipts waves cheerfully at you. “Step right up, step right up! Have the fright of your life!” His face is so wrinkled it looks like melted wax, and on his polo shirt is a name tag that reads “Gene.” He really seems quite nice, and enthusiastic to get you on this old ride. ",
                     StoryId = "HauntedHouseMain"
                 };
- 
+
                 //HauntedHouseYes
                 Paragraph Paragraphs108 = new Paragraph()
                 {
@@ -845,7 +846,7 @@ namespace HillCavernFair.Utilities
                     Content = @"You pass through a short tunnel and are soon floating through an old west style saloon scene. A group of mannequins sit at a table playing a card game, one serving as bartender is busy pouring whiskey for a patron at the bar, and a particularly aged mannequin in a red dress stands atop a stage. A fuzzy recording of a woman singing “House of the Rising Sun” is playing over speakers you can’t see.",
                     StoryId = "OldMillSaloon1"
                 };
-             
+
 
                 //OldMillSaloon2
                 Paragraph Paragraphs146 = new Paragraph()
@@ -1239,7 +1240,7 @@ namespace HillCavernFair.Utilities
                 _context.Add(Paragraphs180);
                 _context.Add(Paragraphs181);
                 _context.Add(Paragraphs182);
-            
+            }
         }
     }
 }
