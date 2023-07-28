@@ -1,4 +1,4 @@
-﻿/*The menu is used frequently, so separating it into its own class reduces copying/pasting.*/
+﻿/*The menu is used frequently, so separating it into its own class reduces copying/pasting and is an example of Single Responsibility.*/
 
 using HillCavernFair.StorySections;
 using Microsoft.Extensions.DependencyInjection;
@@ -38,6 +38,9 @@ namespace HillCavernFair
                 Console.WriteLine();
 
                 opt = Console.ReadLine();
+
+                logger.LogInformation(opt);
+
                 switch (opt)
                 {
                     case "1":
@@ -66,7 +69,7 @@ namespace HillCavernFair
                         break;
                 }
 
-                logger.LogInformation(opt);
+                
 
             } while (true);
 

@@ -1,4 +1,6 @@
-﻿using HillCavernFair.Data;
+﻿/*DbUtility implements the interface of IDbUtility and executes all the methods.*/
+
+using HillCavernFair.Data;
 using HillCavernFair.Domain;
 using Microsoft.EntityFrameworkCore;
 
