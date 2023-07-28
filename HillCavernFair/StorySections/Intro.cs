@@ -21,7 +21,7 @@ public class Intro
         var services = CreateServiceCollection();
 
         Log.Logger = new LoggerConfiguration()
-            .WriteTo.File("gamelogger.log")
+            .WriteTo.File("gamelogger.txt")
             .CreateLogger();
 
         var logger = services.GetService<ILogger<Intro>>();
@@ -58,6 +58,7 @@ public class Intro
 				case "dread":
 					Inventory.Add("Hill Cavern Fair Ticket");
 					Inventory.Add("Park Map");
+					logger.LogInformation("Hill Cavern Fair ticket and Park Map added to inventory.");
 					ChoiceDread.IntroChoiceDread();
 					break;
 

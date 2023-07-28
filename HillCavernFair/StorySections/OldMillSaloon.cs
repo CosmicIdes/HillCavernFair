@@ -28,7 +28,7 @@ namespace HillCavernFair.StorySections
             var services = CreateServiceCollection();
 
             Log.Logger = new LoggerConfiguration()
-            .WriteTo.File("gamelogger.log")
+            .WriteTo.File("gamelogger.txt")
             .CreateLogger();
 
             var logger = services.GetService<ILogger<OldMillSaloon>>();
